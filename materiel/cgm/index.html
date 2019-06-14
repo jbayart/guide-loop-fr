@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>CGM - Guide de Loop</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Guide de Loop</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Page d'accueil</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../faq/questions-generales/">Questions Générales</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matériel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pompe insuline</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../pompe/medtronic/">Medtronic</a>
+</li>
+            
+<li >
+    <a href="../pompe/omnipod/">Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li class="active">
+    <a href="./">CGM</a>
+</li>
+                                    
+<li >
+    <a href="../rileylink/">RileyLink</a>
+</li>
+                                    
+<li >
+    <a href="../ordinateur/">Ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="../iphone/">iPhone</a>
+</li>
+                                    
+<li >
+    <a href="../developpeur-apple/">Compte de Développeur</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../pompe/omnipod/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../rileylink/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#moniteur-de-glycemie-en-continu">Moniteur de glycémie en continu</a></li>
+            <li><a href="#dexcom-g5-et-g6">Dexcom G5 et G6</a></li>
+            <li><a href="#dexcom-g4-avec-share-receiver">Dexcom G4 avec Share Receiver</a></li>
+            <li><a href="#cgm-de-medtronic">CGM de Medtronic</a></li>
+            <li><a href="#looper-hors-connexion">Looper hors connexion</a></li>
+            <li><a href="#les-serveurs-dexcom">Les serveurs Dexcom</a></li>
+            <li><a href="#autres-cgm-non-compatible-nativement-avec-loop">Autres CGM non compatible nativement avec Loop</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="moniteur-de-glycemie-en-continu">Moniteur de glycémie en continu</h1>
+<p>Un moniteur de glycémie en continu (ou CGM, d’anglais “continuous glucose monitor”) fournit à Loop les données du taux de glucose. Ces données permet Loop de calculer la tendance des taux et donc prévoir la glycémie future à base de celle-ci ainsi que les glucides mangés et vos réglages de Loop. Vous trouverez ci-dessous les marques de CGM compatibles avec Loop. Les données du CGM sont obligatoires pour utiliser Loop. Si Loop est incapable de trouver ces données, il peut pas fonctionner en tant que boucle ni ouverte, ni fermée.</p>
+<h2 id="dexcom-g5-et-g6">Dexcom G5 et G6</h2>
+<p>Le Dexcom G5 et G6 (ce dernier n’étant pas disponible en France, mais restant tout de même compatible) reçoivent directement les données de glycémie via Bluetooth dans l’application Dexcom sur votre iPhone. Aucun de ces deux systèmes requièrent le récepteur Dexcom. Pour faire fonctionner Loop, votre application Dexcom doit être active.</p>
+<h2 id="dexcom-g4-avec-share-receiver">Dexcom G4 avec Share Receiver</h2>
+<p>Le système de “Share” (partage) G4 transmet les données de glycémie depuis le transmetteur au Dexcom G4 Share Receiver. Le récepteur se connecte ensuite à l’application Dexcom Share2 sur votre iPhone via Bluetooth. L’application Share2 envoie les données aux serveurs Dexcom. Pour faire fonctionner Loop, votre application Dexcom doit être active.</p>
+<h2 id="cgm-de-medtronic">CGM de Medtronic</h2>
+<p>Le CGM Medtronic, surnommé Enlite, est disponible avec des modèles 522 / 722, 523 / 723, et 554 / 754 de Medtronic. Il envoie les données via une connexion sans fil à la pompe insuline. Loop peut ensuite lire les données directement depuis la pompe en utilisant le RileyLink.</p>
+<h2 id="looper-hors-connexion">Looper hors connexion</h2>
+<p>“Hors connexion” signifie ici d’utiliser Loop sans Internet et sans données cellulaires. Loop ne requiert pas un système spécifique / en plus pour fonctionner hors connexion. Vous n’avez aucun manipulation à faire si vous allez faire du camping ou vous retrouvez dans les montagnes, par exemple. Pour looper hors connexion le Bluetooth sur l’iPhone doit toujours être activé, et pour le Dexcom l’application Dexcom / Share2 doit toujours être active, mais pas nécessairement en train d’envoyer des données en ligne. Si vous mettez votre iPhone en mode avion, pensez à réactiver Bluetooth pour continuer à faire fonctionner Loop. Si la connexion hors ligne échoue, vérifiez que vous avez bien mis l’ID du transmetteur Dexcom dans les réglages de Loop.</p>
+<h2 id="les-serveurs-dexcom">Les serveurs Dexcom</h2>
+<p>Dans les cas rares, il se peut que Loop n’arrive pas à “entendre” les transmissions Bluetooth de Dexcom. Quand ceci arrive, Loop peut lire directement les données depuis les serveurs de Dexcom (pourvu que vous avez mis vos identifiants Dexcom Share dans Loop et à activé Dexcom Share). Quand Loop utilise Dexcom Share comme source des données, vous verrez un petit nuage à côté de votre taux de glycémie dans Loop. Ceci requiert une connexion à l’Internet ou des données cellulaires.</p>
+<h2 id="autres-cgm-non-compatible-nativement-avec-loop">Autres CGM non compatible nativement avec Loop</h2>
+<p>Freestyle Libre (BluCon et Miaomiao), Eversense, Medtronic Guardian... voici quelques exemples de CGM qui ne fonctionnent pas nativement avec Loop. Si vous souhaitez utiliser l’un de ces CGM comme source des données, vous devez aller chercher les parties tiers qui font l’intégration entre le CGM et Loop. Ces guides ne montrent pas les méthodes alternatives des systèmes CGM non compatibles ou des applications comme Spike.</p>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/setup/requirements/cgm/">Cliquez ici pour voir la page d'origine</a></h3></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
