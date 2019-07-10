@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title><#Title#> - Guide de Loop</title>
+        <title>Préparer votre ordinateur Apple - Guide de Loop</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -113,12 +113,51 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#title">&lt;#Title#&gt;</a></li>
+        <li class="main active"><a href="#preparer-votre-ordinateur-apple">Préparer votre ordinateur Apple</a></li>
+            <li><a href="#verifier-macos">Vérifier macOS</a></li>
+            <li><a href="#installer-homebrew">Installer Homebrew</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="title">&lt;#Title#&gt;</h1></div>
+<h1 id="preparer-votre-ordinateur-apple">Préparer votre ordinateur Apple</h1>
+<p>N’importe quel ordinateur Apple fonctionnera à partir du moment où :</p>
+<ul>
+<li>
+<p>Il a la version macOS compatible</p>
+</li>
+<li>
+<p>Vous avez des droits d’administrateur pour pouvoir installer des nouveaux logiciels sur l’ordinateur</p>
+</li>
+<li>
+<p>Vous êtes connecté(e) à l’Internet</p>
+</li>
+</ul>
+<h2 id="verifier-macos">Vérifier macOS</h2>
+<p>Vous devez utiliser macOS 10.14.3 (Mojave) au minimum si :</p>
+<ul>
+<li>
+<p>Vous souhaitez utiliser une branche Omnipod ou Loop-dev</p>
+</li>
+<li>
+<p>Votre iPhone ou iPod Touch a iOS 12.2 (ou plus récent)</p>
+</li>
+</ul>
+<p>Vous pouvez utiliser macOS 10.13.6 High Sierra si vous montez la branch Loop-master et avez iOS 12 ou 12.1. La version de Loop d’après requiert Mojave, donc gardez cela en tête en planifiant votre aventure Loop.</p>
+<p>Vérifiez votre macOS en cliquant sur le logo Apple en haut à gauche de votre écran et sélectionnez <code>À propos de ce Mac</code>.</p>
+<p><img alt="macos" src="../img/macos.png" /></p>
+<p>Si votre macOS n’a pas la version minimum, cliquez sur <code>Mise à jour de logiciels...</code> et procéder avec ceci. Si votre ordinateur et plus ancien que fin 2009 / 2010 (selon le modèle), il se peut que vous pouvez pas faire la mise à jour requise pour avoir Mojave et utiliser la version Xcode nécessaire. Vous pouvez vérifiez la compatibilité des macOS <a href="https://www.apple.com/macos/how-to-upgrade/#hardware-requirements">ici</a>.</p>
+<h2 id="installer-homebrew">Installer Homebrew</h2>
+<p>Homebrew est un logiciel qui nous permet d’installer les packages nécessaires pour monter Loop. Ouvrez l’application Terminal sur votre ordinateur. Vous pouvez la trouver dans le fichier Applications. Ensuite, regardez dans le fichier Utilitaires pour trouver Terminal.</p>
+<p><img alt="terminal" src="../img/terminal.png" /></p>
+<p>L’application Terminal semble vraiment anodin quand vous l’ouvrez. C’est normal. Copiez puis collez le texte ci-dessous dans la fenêtre Terminal. Cliquez sur la touche « retour » après avoir collé le texte.</p>
+<p><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></p>
+<p>Il y aura une fenêtre qui vous demandera si vous voulez continuer. Cliquez sur la touche « retour » pour continuez, puis l’ordinateur vous demandera le mot de passe de votre ordinateur.</p>
+<p><strong><em>Ne vous inquiétez pas quand vous ne voyez pas votre mot de passe pendant que vous le tapez. Ceci est normal. L’application Terminal ne montre pas des frappes quand on entre un mot de passe. Si vous croyez avoir fait une erreur, cliquez sur la touche supprimer plusieurs fois puis recommencer.</em></strong></p>
+<p>Attendez pendant que Terminal fait son boulot. Vous allez voir des informations et données s’afficher puis Terminal va arrêter pendant un moment. Après un peu de temps, vous allez voir quelque chose qui dit « installation successful » et Terminal sera prêt à continuer.</p>
+<p><img alt="homebrew" src="img/homebrew.png" /></p>
+<p>Vous pouvez fermer l’application Terminal maintenant. On a terminé avec. Vous ne devez pas refaire ce processus dans l’avenir. </p>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/build/build-computer/">Cliquez ici pour voir la page d’origine</a></h3></div>
         </div>
 
         <footer class="col-md-12">
