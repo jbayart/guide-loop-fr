@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title><#Title#> - Guide de Loop</title>
+        <title>Configurer le compte de développeur - Guide de Loop</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -97,6 +97,27 @@
 </li>
                                 </ul>
                             </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Construire <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../apercu-construction/">Aperçu</a>
+</li>
+                                    
+<li >
+    <a href="../preparation-ordi/">Préparation de l`ordinateur</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Configurer le compte de développeur</a>
+</li>
+                                    
+<li >
+    <a href="../installer-xcode/">Installer Xcode</a>
+</li>
+                                </ul>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -105,6 +126,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../preparation-ordi/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../installer-xcode/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -113,12 +144,45 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#title">&lt;#Title#&gt;</a></li>
+        <li class="main active"><a href="#configurer-le-compte-de-developpeur-apple">Configurer le compte de développeur Apple</a></li>
+            <li><a href="#adhesion-gratuit">Adhésion gratuit</a></li>
+            <li><a href="#adhesion-payant">Adhésion payant</a></li>
+            <li><a href="#inscription">Inscription</a></li>
+            <li><a href="#differencier-entre-gratuit-et-payant-dans-xcode">Différencier entre Gratuit et Payant dans Xcode</a></li>
+            <li><a href="#changer-de-grauit-en-payant">Changer de grauit en payant</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="title">&lt;#Title#&gt;</h1></div>
+<h1 id="configurer-le-compte-de-developpeur-apple">Configurer le compte de développeur Apple</h1>
+<p>Afin de contruire votre application Loop sur votre iPhone, vous devez avoir un compte de développeur Apple. Vous avez deux options pour votre compte de particulier : gratuit ou payant.</p>
+<h2 id="adhesion-gratuit">Adhésion gratuit</h2>
+<p>Si vous décidez d'utiliser un compte <strong>gratuit</strong>, il faut savoir que :</p>
+<p>1) Les applications Loop signées avec un compte gratuit expireront après 7 jours. Le 7e jour, votre application Loop s'affichera avec un écran blanc puis se fermera immédiatement. Pour reconstruire Loop, vous devez avoir un ordinateur Apple. <strong>Vous ne pouvez pas reconstruire l'application le 5e jour (quand cela vous convient, par exemple) en espérant de remettre à zéro le compteur de 7 jours.</strong> L'application expirera le 7e jour de sa création.</p>
+<p>2) Si vous décidez de changer votre compte gratuit en compte payant, vous devez remontez l'application Loop afin de la signer avec votre nouveau compte.</p>
+<p>3) Vous devez faire une maniulation du code pour enlever les capacités Siri pour pouvoir monter l'application.</p>
+<h2 id="adhesion-payant">Adhésion payant</h2>
+<p>Si vous décidez d'utiliser un compte <strong>payant</strong>, il faut savoir que :</p>
+<p>1) Les applications Loop signées avec un compte payant axpireront après 1 an (365 jours).</p>
+<p>2) Le compte payant coûte 99€ et se renouvellera automatiquement annuellement. Vous pouvez changer le renouvellement automatique dans les réglages de votre compte à tout moment.</p>
+<p>3) Si votre foyer a plusieurs utilisateurs Loop, il suffit d'avoir un seul compte de développeur. Ce compte unique peut être utilisé pour signer pluseiurs applications Loop.</p>
+<h2 id="inscription">Inscription</h2>
+<p>Si vous avez décidez d'utiliser un compte <em>gratuit</em>, merci de ne pas suivre les étapes suivantes. Les étapes pour le compte <em>gratuit</em> seront indiqué plus tard.</p>
+<blockquote>
+<p><strong><em>Attention</em></strong></p>
+<p>Si vous avez décidez d'utiliser un compte payant, vous devez vous inscrire. Allez sur <a href="https://developer.apple.com/programs/enroll/">le site de développeur Apple</a> pour ce faire.
+</p>
+</blockquote>
+<p>L'Apple ID que vous utilisez pour vous inscrire dans le programme de développeur ne doit pas forcément être le même que celui du portable (par exemple, un parent qui installe l'application Loop sur l'iPhone de son enfant). Typiquement, l'inscription se fait avec l'Apple ID de la personne qui construit l'application Loop. Après l'inscription, veuillez vérifiez votre boîte e-mail pour un message de confirmation. Apple signale que ceci peut prendre jusqu'à 24 heures, mais il se peut que l'e-mail arrive après quelques minutes.</p>
+<h2 id="differencier-entre-gratuit-et-payant-dans-xcode">Différencier entre Gratuit et Payant dans Xcode</h2>
+<p>Plus tard dans ce processus, vous allez sélectionner un "<em>team</em>" pour signer l'application et Xcode va générer automatiquement ce que l'on appelle un <em>Provisioning Profile</em> pour "signer" l'application. C'est comme ça qu'Apple surveille la validité et sécurité de l'application. Les comptes gratuits seront indiqué par "(Personal Team)" à droite de votre nom. Les comptes payants n'auront pas "(Personal Team)".</p>
+<p><img alt="team" src="../img/team.png" /></p>
+<h2 id="changer-de-grauit-en-payant">Changer de grauit en payant</h2>
+<p>En sommaire : il n'y a pas de soucis si vous voulez utiliser un compte gratuit avant de payer pour un compte. Plusieurs utilisateurs commencent avec l'adhésion gratuite pour se familiariser avec Loop et être sûr de vouloir continuer. Quand vous montez l'application, Xcode identifie l'application Loop spécifiquement avec ce que l'on appelle un <em>bundle identifier</em>, basé sur votre compte développeur. Ce qui est génial avec cette organisation du système c'est que quand / si vous décidez de mettre à jour votre application Loop dans l'avenir, tous vos réglages anciens sont sauvegardés dans Loop. Fonctionnellement, c'est ce que vous connaissez déjà dans toutes vos applications : toute information dans l'application demeure inchangée après une mise à jour dans l'App Store. C'est pareil avec Loop.</p>
+<p>Cette magie vient du <em>bundle identifier</em>. Le <em>bundle identifier</em> est automatiquement généré pour Loop depuis le compte développeur que vous utilisez pour signer Loop dans Xcode. Cela veut dire que le <em>bundle identifier</em> changera quand vous passez d'un compte gratuit à un compte payant. Pourquoi fallait-il mentionner ceci ? Parce qu'il influence la transition entre les deux comptes.</p>
+<p>Si vous commencez avec un compte gratuit et monter Loop, vous allez avoir une application Loop (que l'on dénommera Loop1). Quand vous passez au compte payant et monte Loop, vous allez monter toute une nouvelle application Loop sur l'iPhone (que l'on dénommera Loop2). Loop2 ne saura rien sur les réglages et les informations de Loop1, donc vous allez devoir entrer à nouveau tout réglage de Loop1 (taux de basale, ratio glucides, facteurs de sensibilité, etc) et configurer tout cela dans Loop2 après l'avoir monté. Vous devez ensuite supprimer Loop1 de votre iPhone - celui qui a été monté avec le compte gratuit - pour éviter tout conflit.</p>
+<h3 id="prochaine-etape-installer-xcode">Prochaine étape : <a href="https://cyoung1024.github.io/guide-loop-fr/construire/installer-xcode/">Installer Xcode</a></h3>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/build/build-developer/">Cliquez ici pour voir la page d'origine</a></h3></div>
         </div>
 
         <footer class="col-md-12">
