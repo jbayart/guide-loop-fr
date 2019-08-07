@@ -3,7 +3,7 @@
 Ce qui suit est une collection de documents créés par les fondateurs et développeurs du système Loop, originellement écrits en anglais. Ils ont été traduits en français pour en faciliter l'accès à la communauté francophone. Sur chaque page vous trouverez un lien vers la page d'origine. Ces documents étant traduits au fur et à mesure par une seule personne, veuillez vérifier la source, [LoopDocs](https://loopkit.github.io/loopdocs/), régulièrement pour vous assurez d'avoir toute information à jour.
 
 ## Introduction
-[Loop](https://github.com/LoopKit/Loop) est un patron d'application pour monter un système de délivrance d'insuline automatisé. C'est une pierre de l'édifice bâti par de nombreux autres membres de la communauté diabétique.
+[Loop](https://github.com/LoopKit/Loop) est un modèle d'application pour monter un système de délivrance d'insuline automatisé. C'est une pierre de l'édifice bâti par de nombreux autres membres de la communauté diabétique.
 
 L'application est construite sur [LoopKit](https://github.com/LoopKit/LoopKit). LoopKit est une collection de "*frameworks*" fournissant le stockage, la récupération et le calcul de données, ainsi que des contrôleurs de vue standard utilisés dans Loop.
 
