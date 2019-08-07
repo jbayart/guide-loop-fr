@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Omnipod - Guide de Loop</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Guide de Loop</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../faq/questions-generales/">Questions Générales</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matériel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pompe insuline</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../medtronic/">Medtronic</a>
+</li>
+            
+<li class="active">
+    <a href="./">Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../cgm/">CGM</a>
+</li>
+                                    
+<li >
+    <a href="../../rileylink/">RileyLink</a>
+</li>
+                                    
+<li >
+    <a href="../../ordinateur/">Ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="../../iphone/">iPhone</a>
+</li>
+                                    
+<li >
+    <a href="../../developpeur-apple/">Compte de Développeur</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Construire <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../construire/apercu-construction/">Aperçu</a>
+</li>
+                                    
+<li >
+    <a href="../../../construire/preparation-ordi/">Préparation de l`ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="../../../construire/compte-dev/">Configurer le compte de développeur</a>
+</li>
+                                    
+<li >
+    <a href="../../../construire/installer-xcode/">Installer Xcode</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../medtronic/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../cgm/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#omnipod-insulet-eros">Omnipod Insulet : Eros</a></li>
+            <li><a href="#eros">Eros</a></li>
+            <li><a href="#dash">DASH</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="omnipod-insulet-eros">Omnipod Insulet : Eros</h1>
+<blockquote>
+<p><strong><em>Rappel et conditions générales</em></strong></p>
+<p>Avec le travail de la communauté DIY, l’Omnipod de Insulet est désormais compatible avec Loop. L’utilisation des pods Eros n’est pas approuvé par Insulet. N’appelez pas Insulet afin d’obtenir de l’aide pour monter, mettre en place, ou faire fonctionner Loop. Ce projet n’est pas approuvé par la FDA, et vous l’utilisez à vos propres risques. Veuillez lire tous les documents pour vous vous familiariser avec Loop avant de commencer.
+</p>
+<p><code>Loop avec Omnipod est toujours sous développement.</code></p>
+<p>Loop avec Omnipod est considéré comme une “<em>branche</em>”, une version, expérimental. Ceux utilisant cette branche expérimentale devraient s’attendre à ce qu’il y ait des problèmes et doivent être prêts à participer au développement en signalant et captant tout problème observé. Cette branche sera mise à jour d’une façon plus régulière qu’une branche stable, pour réparer des bogues. Par conséquent, les utilisateurs contrôleurs devraient être prêts et capables de mettre à jour régulièrement leur application Loop pour avoir les réparations des bogues.
+</p>
+</blockquote>
+<h2 id="eros">Eros</h2>
+<blockquote>
+<p><code>Loop est compatible avec ces pods.</code></p>
+<p>Les pods Eros ont débuté sur le marché aux États Unis en 2013 et continue à être venus par Insulet. De nos connaissances, il n’y aurait aucune intention ou timeline annoncés pour la rupture des poids Eros pour les clients existants. Insulet n’appelle plus ces pods “Eros” spécifiquement, il utilise simplement le terme “système Omnipod”.</p>
+</blockquote>
+<p>Pour être clair, voici une image du site web d’Insulet :</p>
+<p><img alt="eros" src="../img/eros.png" /></p>
+<p>Le system Eros utilise le PDM que nous connaissons tous.</p>
+<h2 id="dash">DASH</h2>
+<blockquote>
+<p><code>Loop n’est pas compatible avec les pods DASH. Ils ne sont pas encore disponibles en France.</code>
+</p>
+</blockquote>
+<p>Insulet a annoncé le système DASH comme remplacement potentiel des pods Eros. Il y a déjà un petit groupe d’utilisateurs qui a reçu les DASH lors d’un lancement limité, avec un deuxième lancement plus accessible à la voie publique anticipé en 2019. Le système DASH utilise le nouveau PDM, qui est plus fin et possède son propre système Bluetooth avec le pod (contrairement aux signaux radios de nos jours). Loop ne sera pas compatible avec le système DASH.</p>
+<p><img alt="dash" src="../img/dash.png" /></p>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/setup/requirements/omnipod-pump/">Cliquez ici pour voir la page d'origine</a></h3></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

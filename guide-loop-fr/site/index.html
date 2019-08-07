@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Guide de Loop</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">Guide de Loop</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="faq/questions-generales/">Questions Générales</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matériel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pompe insuline</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="materiel/pompe/medtronic/">Medtronic</a>
+</li>
+            
+<li >
+    <a href="materiel/pompe/omnipod/">Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="materiel/cgm/">CGM</a>
+</li>
+                                    
+<li >
+    <a href="materiel/rileylink/">RileyLink</a>
+</li>
+                                    
+<li >
+    <a href="materiel/ordinateur/">Ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="materiel/iphone/">iPhone</a>
+</li>
+                                    
+<li >
+    <a href="materiel/developpeur-apple/">Compte de Développeur</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Construire <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="construire/apercu-construction/">Aperçu</a>
+</li>
+                                    
+<li >
+    <a href="construire/preparation-ordi/">Préparation de l`ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="construire/compte-dev/">Configurer le compte de développeur</a>
+</li>
+                                    
+<li >
+    <a href="construire/installer-xcode/">Installer Xcode</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="faq/questions-generales/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#bienvenue-sur-loop">Bienvenue sur Loop</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#historique-du-developpement">Historique du développement</a></li>
+            <li><a href="#comment-utiliser-ces-guides">Comment utiliser ces guides</a></li>
+            <li><a href="#restez-connectee">Restez connecté(e) !</a></li>
+            <li><a href="#contribuez">Contribuez</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="bienvenue-sur-loop">Bienvenue sur Loop</h1>
+<p>Ce qui suit est une collection de documents créés par les fondateurs et développeurs du système Loop, originellement écrits en anglais. Ils ont été traduits en français pour en faciliter l'accès à la communauté francophone. Sur chaque page vous trouverez un lien vers la page d'origine. Ces documents étant traduits au fur et à mesure par une seule personne, veuillez vérifier la source, <a href="https://loopkit.github.io/loopdocs/">LoopDocs</a>, régulièrement pour vous assurez d'avoir toute information à jour.</p>
+<h2 id="introduction">Introduction</h2>
+<p><a href="https://github.com/LoopKit/Loop">Loop</a> est un patron d'application pour monter un système de délivrance d'insuline automatisé. C'est une pierre de l'édifice bâti par de nombreux autres membres de la communauté diabétique.</p>
+<p>L'application est construite sur <a href="https://github.com/LoopKit/LoopKit">LoopKit</a>. LoopKit est une collection de "<em>frameworks</em>" fournissant le stockage, la récupération et le calcul de données, ainsi que des contrôleurs de vue standard utilisés dans Loop.</p>
+<blockquote>
+<p><strong><em>AVERTISSEMENT</em></strong></p>
+<p>Il est primordial de comprendre que ce projet :</p>
+<ul>
+<li>est extrêmement expérimental</li>
+<li>n'est pas approuvé pour traitement médical</li>
+</ul>
+<p><strong>Vous endossez à vos propres risques l'entière responsabilité de monter et faire fonctionner ce système.</strong>
+</p>
+</blockquote>
+<p>Utilisant le patron "<em>open source</em>", ou "en libre accès", de l'application Loop, vous pouvez monter un système de délivrance d'insuline utilisant des technologies matérielles et logicielles spécifiques, qu'elles soit commerciales ou en <em>open source</em>, pour réunir la pompe à insuline, le moniteur de glycémie en continu (ou "<em>CGM</em>") et l'algorithme de dosage d'insuline afin de créer une base de débits de basale en continu, en <em>Loop</em>, en boucle. Cette boucle prévoit la glycémie future en se basant sur les débits de basal programmés, les glucides consommés, l'insuline à bord (déjà dans le corps), et la glycémie actuelle donnée via le CGM. Ces prévisions fournissent à Loop l'information requise pour recommander un débit de basale temporaire afin d'obtenir une intervalle de glucose ciblée dans le proche avenir. Ce système peut fonctionner soit comme boucle ouverte en faisant des recommandations à l'utilisateur pour son approbation avant de mettre en œuvre son analyse, soit comme boucle fermée en injectant automatiquement le débit de basale recommandé.</p>
+<p>Vous devrez entreprendre ce projet pas à pas. Par exemple, commencer par une boucle ouverte pour vous vous familiariser avec l'opération de Loop. De plus, lisez le code pour être sûr(e) de comprendre ce que Loop vous suggère <em>et pourquoi</em>. Ensuite, quand vous passez de la boucle ouverte à la boucle fermée, faites-le en toute sécurité en commençant avec des limites d'insuline strictes et progresser aux limites plus larges si et seulement si vous passez plusieurs jours sans hypoglycémies. Posez-vous des questions à ce stade du <em>pourquoi</em> Loop fait ses recommandations. Celles-ci devraient être similaire à ce que vous auriez fait vous-même. Si les recommandations de Loop ne sont pas semblables ou n'ont pas de sens logique, essayez de comprendre pourquoi.</p>
+<h2 id="historique-du-developpement">Historique du développement</h2>
+<p>Loop a été développé comme un projet <em>open source</em> et partagé. Pour une lecture très intéressant sur l'histoire de Loop et son développement, allez jeter un coup d'œil à <a href="https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805">History of Loop and LoopKit</a>, écrit (en anglais) par le développeur Nate Racklyeft. Ce projet continue à être un travaille d'amour par la communauté d'utilisateurs ; maintenu et amélioré par les bénévoles.</p>
+<h2 id="comment-utiliser-ces-guides">Comment utiliser ces guides</h2>
+<ul>
+<li>Utilisez le menu de navigation en haut de votre écran pour trouver l'information dont vous avez besoin.</li>
+<li>Un index pour la page actuelle est toujours affiché à gauche de l'écran </li>
+<li>Vous pouvez faire des recherches sur ce site en cliquant sur l'icône <img alt="search" src="img/search.png" title="Search" /></li>
+</ul>
+<h2 id="restez-connectee">Restez connecté(e) !</h2>
+<p><a href="https://groups.google.com/forum/#!forum/loop-ios-users">Inscrivez-vous sur la liste d'annonces d'utilisateurs Loop</a> pour rester informé(e) des alertes critiques qui peuvent intervenir. En anglais uniquement.</p>
+<p>Rejoindre le <a href="https://loop.zulipchat.com">Zulipchat</a>. En anglais uniquement.</p>
+<p>Il existe le <a href="https://www.facebook.com/groups/TheLoopedGroup/?fref=nf">groupe Facebook "Looped"</a> que vous pouvez vous joindre pour trouver de l'aide. En anglais principalement, mais parfois dans d'autres langues aussi, y compris le français.</p>
+<p>Dernièrement, le <a href="https://www.facebook.com/groups/478980526199264/">groupe Looped France</a>, un groupe d'entraide en français.</p>
+<h2 id="contribuez">Contribuez</h2>
+<p>Veuillez envisager soumettre des mises à jour ou améliorations au documentation que vous voulez partager en soumettant un <em>Pull Request</em> au <a href="https://github.com/LoopKit/loopdocs">loopdocs repo</a> si vous ne trouvez pas ce que vous cherchez sur les documents <strong>anglais</strong>, ou au <a href="https://github.com/cyoung1024/guide-loop-fr">guide-loop-fr repo</a> si vous ne trouvez pas ce que vous cherchez sur les documents <strong>français</strong>. Pour plus d'information sur comment contribuer à un projet <em>open source</em>, ce guide <a href="https://opensource.guide/how-to-contribute/">"How to Contribute to Open Source"</a> peut s'avérer utile. Dernièrement, veuillez lire la <a href="https://github.com/LoopKit/Loop/blob/master/LICENSE.md">licence de Loop</a> et le <a href="https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT</a> (code de conduite).</p>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/">Cliquez ici pour voir la page d'origine</a></h3></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-07-29 19:24:20
+-->

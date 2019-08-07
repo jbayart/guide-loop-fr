@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Installer Xcode - Guide de Loop</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Guide de Loop</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../faq/questions-generales/">Questions Générales</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matériel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pompe insuline</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../materiel/pompe/medtronic/">Medtronic</a>
+</li>
+            
+<li >
+    <a href="../../materiel/pompe/omnipod/">Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../materiel/cgm/">CGM</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/rileylink/">RileyLink</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/ordinateur/">Ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/iphone/">iPhone</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/developpeur-apple/">Compte de Développeur</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Construire <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../apercu-construction/">Aperçu</a>
+</li>
+                                    
+<li >
+    <a href="../preparation-ordi/">Préparation de l`ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="../compte-dev/">Configurer le compte de développeur</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Installer Xcode</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../compte-dev/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#installer-xcode">Installer Xcode</a></li>
+            <li><a href="#telecharger-xcode">Télécharger Xcode</a></li>
+            <li><a href="#linstallation-des-command-line-tools">L’installation des Command Line Tools</a></li>
+            <li><a href="#ajouter-le-compte-de-developpeur">Ajouter le compte de développeur</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="installer-xcode">Installer Xcode</h1>
+<p>On y est presque ! Cette étape est simplement pour installer un logiciel gratuit qui s’appelle Xcode.</p>
+<blockquote>
+<p>Si vous montez Loop Omnipod, Loop dev, ou avez iOS 12.2 installé, veuillez vérifier que vous avez suivi les instructions pour mettre à jour macOS 10.14.3 au minimum. Vous ne pourriez pas télécharger et utiliser Xcode 10.2 sans cette mise à jour.
+</p>
+</blockquote>
+<h2 id="telecharger-xcode">Télécharger Xcode</h2>
+<p>Ouvrez l’App Store sur votre ordinateur (dans le fichier « applications »). Recherchez Xcode et cliquez sur le lien pour télécharger / installer Xcode gratuitement. La version la plus récente de Xcode est 10.2.1. Ne téléchargez pas la version beta de Xcode. La taille du fichier est relativement importante, donc l’installation peut prendre 45 minutes, ou même plusieurs heures, selon la vitesse de votre connexion Internet.</p>
+<p>Si vous aviez déjà Xcode sur votre ordinateur, vous pouvez simplement vérifier les mises à jour disponibles sur l’App Store.</p>
+<p><img alt="xcode-store" src="../img/xcode-store.png" /></p>
+<h2 id="linstallation-des-command-line-tools">L’installation des <em>Command Line Tools</em></h2>
+<p>Une fois Xcode installé, ouvrez-le depuis le fichier « applications ». Il peut y avoir un petit délai pendant l’ouverture, car Xcode est en train de mettre en place les <em>Command Line Tools</em> nécessaires. <strong>Ne fermez pas cette fenêtre</strong>, laissez Xcode finir. Une fois Xcode ouvert et prêt, on va commencer par ajouter votre compte de développeur Apple dans Xcode.</p>
+<blockquote>
+<p>REMARQUES : Ne pas interrompre l’installation des <em>Command Line Tools</em>. Ceci est très, très important pour le bon fonctionnement de Xcode. Quand l’installation est terminé, vérifiez que les <em>Command Line Tools</em> sont bien installés en ouvrant les préférences dans Xcode et en cliquant sur l’icône « <em>Locations</em> ».
+<img alt="locations" src="../img/locations.png" /></p>
+</blockquote>
+<h2 id="ajouter-le-compte-de-developpeur">Ajouter le compte de développeur</h2>
+<p>Allez dans le menu de Xcode et cliquez sur « préférences ». Ensuite, cliquez sur « <em>Accounts</em> » puis le bouton <code>+</code>en bas à gauche pour ajouter un compte Apple.</p>
+<p><img alt="add-account" src="../img/add-account.png" /></p>
+<p>Si vous voulez utiliser un compte gratuit, vous allez simplement ajouter votre Apple ID ici et Xcode vous inscrira automatiquement dans le programme de développeur. Si vous êtes déjà inscrit(e) pour l’adhésion payante, mettez l’Apple ID associé avec votre abonnement. La capture d’écran ci-dessous vous montre la dénomination des comptes selon s’il sont un compte payant ou pas. Les comptes gratuits auront « (Personal Team) » après le nom.</p>
+<p><img alt="free-v-paid" src="../img/free-v-paid.png" /></p>
+<p>Enfin, vous allez activer <em>Line Numbers</em> afin de faciliter quelques étapes que l’on fera plus tard. Allez dans « <em>Text Editing</em> » dans la fenêtre de préférences. Cliquez pour activer les <em>line numbers</em>.</p>
+<p><img alt="line-numbers" src="../img/line-numbers.png" /></p>
+<p>Vous avez fini de mettre en place Xcode. Vous n’allez pas devoir refaire ce processus à aucun moment - Xcode se souviendra de ces réglages.</p>
+<h3 id="prochaine-etape-construire-loop-disponible-bientot">Prochaine étape : construire Loop - disponible bientôt !</h3>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/build/build-xcode/">Cliquez ici pour voir la page d’origine</a></h3></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

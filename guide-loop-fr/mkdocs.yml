@@ -1,0 +1,20 @@
+site_name: Guide de Loop
+nav:
+- Home: 'index.md'
+- FAQ:
+  - 'Questions Générales': 'faq/questions-generales.md'
+- Matériel:
+  - Pompe insuline:
+    - 'Medtronic': 'materiel/pompe/medtronic.md'
+    - 'Omnipod': 'materiel/pompe/omnipod.md'
+  - 'CGM': 'materiel/cgm.md'
+  - 'RileyLink': 'materiel/rileylink.md'
+  - 'Ordinateur': 'materiel/ordinateur.md'
+  - 'iPhone': 'materiel/iphone.md'
+  - 'Compte de Développeur': 'materiel/developpeur-apple.md'
+- Construire:
+  - 'Aperçu': 'construire/apercu-construction.md'
+  - 'Préparation de l`ordinateur': 'construire/preparation-ordi.md'
+  - 'Configurer le compte de développeur': 'construire/compte-dev.md'
+  - 'Installer Xcode': 'construire/installer-xcode.md'
+  - 'Construire Loop': 'construire/construire-loop.md'
