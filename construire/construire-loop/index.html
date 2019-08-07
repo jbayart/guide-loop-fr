@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Monter Loop - Guide de Loop</title>
+        <title>Construire Loop - Guide de Loop</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -97,7 +97,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Construire <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -116,6 +116,10 @@
 <li >
     <a href="../installer-xcode/">Installer Xcode</a>
 </li>
+                                    
+<li class="active">
+    <a href="./">Construire Loop</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -126,6 +130,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../installer-xcode/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -134,7 +148,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#monter-loop">Monter Loop</a></li>
+        <li class="main active"><a href="#construire-loop">Construire Loop</a></li>
             <li><a href="#telecharger-le-code-de-loop">Télécharger le code de Loop</a></li>
             <li><a href="#ouvrir-loop-dans-xcode">Ouvrir Loop dans Xcode</a></li>
             <li><a href="#brancher-liphone">Brancher l’iPhone</a></li>
@@ -146,7 +160,7 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="monter-loop">Monter Loop</h1>
+<h1 id="construire-loop">Construire Loop</h1>
 <p>Maintenant que votre système est mis en place, on peut commencer à monter l’application Loop.</p>
 <h2 id="telecharger-le-code-de-loop">Télécharger le code de Loop</h2>
 <p>Vous devez télécharger le code de Loop pour pouvoir le monter dans votre ordinateur. Cliquez sur l’<strong>un</strong> de ces liens ci-dessous pour télécharger votre code de Loop. Veuillez lire attentivement les notices en dessous des liens avant de procéder.</p>
@@ -210,15 +224,23 @@ Selon vos réglages du navigateur web, votre téléchargement Loop dézippera au
 <p>Si vous voulez des configurations personnalisées pour votre application Loop pour l'iPhone ou pour l'Apple Watch, faites-les maintenant avant de continuez. Suivez les étapes <a href="https://https://cyoung1024.github.io/guide-loop-fr/construire/personnalisation/">sur cette page</a>. Si vous connaissez le langage Swift, vous pouvez aussi personnaliser ce que vous voulez.</p>
 <p>Après avoir fini avec les personnalisations, veuillez revenir ici pour continuer.</p>
 <h2 id="connecter-lapple-watch">Connecter l'Apple Watch</h2>
-<p><strong>Nouveaux utilisateurs du Apple Watch :</strong> si vous avez une nouvelle Apple Watch et voulez l'utiliser, jumelez la Watch avec l'iPhone avant de continuer. Si vous achetez une nouvelle Watch après avoir installé l'application Loop, vous allez devoir refaire la construction de Loop. (Ne vous inquiètez pas, c'est extrêmement facile.)</p>
-<p><strong>Utilisateurs existants du Apple Watch :</strong> Veuillez mettre à jour votre watchOS avant de monter Loop. La version actuelle de Loop requiert watchOS 4.1 ou plus récent.</p>
+<p><strong>Nouveaux utilisateurs de l'Apple Watch :</strong> si vous avez une nouvelle Apple Watch et voulez l'utiliser, jumelez la Watch avec l'iPhone avant de continuer. Si vous achetez une nouvelle Watch après avoir installé l'application Loop, vous allez devoir refaire la construction de Loop. (Ne vous inquiètez pas, c'est extrêmement facile.)</p>
+<p><strong>Utilisateurs existants de l'Apple Watch :</strong> Veuillez mettre à jour votre watchOS avant de monter Loop. La version actuelle de Loop requiert watchOS 4.1 ou plus récent.</p>
 <blockquote>
-<p><strong>Utilisateurs de la série 0 du Apple Watch :</strong></p>
+<p><strong>Utilisateurs de la série 0 de l'Apple Watch :</strong></p>
 <p>Vous allez devoir faire un petit changement dans le code de Loop pour l'utiliser. Veuillez sélectionner le <em>target</em> WatchApp Extention, et sous "<em>Linked Frameworks and Libraries</em>" cliquez sur <code>+</code>et tapez "ClockKit" puis cliquez sur <code>Add</code>. Dans la colonne "<em>Status</em>" du rang nouveau <em>ClockKit</em>, changez "<em>Required</em>" en "<em>Optional</em>". Vous pouvez maintenant continuer avec les instrucitons qui suivent.
 </p>
 </blockquote>
 <h2 id="entracte">ENTRACTE</h2>
-<p>A</p></div>
+<p>ARRÊTEZ. <em>Lisez cette partie minutieusement, méticuleusement ; en bref : avec <strong>beaucoup</strong> d'attention</em>. N'ignoriez pas ce qui suit. C'est. Très. Important.</p>
+<p>Ceci est pour votre sécurité.</p>
+<p>Certains continue à ignorer les avertissements de sécurité et ca met en péril non seulement leur santé mais aussi leurs vies.</p>
+<blockquote>
+<p><strong>N'IMPROVISER PAS LA MISE EN PLACE DE CE SYSTÈME</strong></p>
+<p>Continuez à lire ces guides pour finir la mise en place de Loop après avoir fini avec la construction. <em>Ne mettez aucun réglage dans votre application Loop sans avoir les yeux sous ces guides.</em>
+</p>
+</blockquote>
+<p>La section "Mise en place" doit être employée pour chaque réglage de Loop. <strong>Suivre ces guides pour les entrer.</strong> Il y a des avertissements de sécurité dans chaque partie. Et quand vous finissez la mise en place, vous devez impérativement lire la section "Utilisation"... <strong><em>AVANT D'UTILISER LOOP</em></strong>. Ne prenez pas un bolus, ni entrer des glucides, avant de lire la section Utilisation.</p></div>
         </div>
 
         <footer class="col-md-12">
