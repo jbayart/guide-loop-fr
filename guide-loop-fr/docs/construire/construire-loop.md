@@ -65,7 +65,7 @@ Branchez votre iPhone via son câble pour le lier avec votre ordinateur. Sélect
 >
 > **Pour les utilisateurs du compte gratuit :**
 >
-> Si vous utilisez un compte de développeur gratuit pour "signez les targets", vous devez effectuer une personnalisation de votre code Loop avant de continuer. En tant qu'utilisateur du compte gratuit, vous ne pouvez pas monter des applications ayant les capacités Siri. Loop a des capacités Siri... Donc, vous devez les désactiver avant de procéder. Veuillez [cliquer ici pour trouver les instructions](https://cyoung1024.github.io/guide-loop-fr/construire/personnalisation/#desactiver-siri) pour désactiver Siri. Une fois ceci fait, revenez ici pour finir cette étape.
+> Si vous utilisez un compte de développeur gratuit pour "signez les targets", vous devez effectuer une personnalisation de votre code Loop avant de continuer. En tant qu'utilisateur du compte gratuit, vous ne pouvez pas monter des applications ayant les capacités Siri. Loop a des capacités Siri... Donc, vous devez les désactiver avant de procéder. Veuillez [cliquer ici pour trouver les instructions](https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities) pour désactiver Siri. Une fois ceci fait, revenez ici pour finir cette étape.
 >
 
 Après avoir sélectionné votre iPhone (le *nom* de votre iPhone et non pas le type d'iPhone), vous êtes prêt(e) à signer les targets. Commencez avec la *target* de Loop, le premier sur la liste des targets, affiché à gauche comme indiqué ci-dessous. Sous l'option "signing", sélectionnez le menu où est marqué jusqu'à présent "none". Choisissez la *team* que vous voulez utiliser. Si vous sélectionnez une *team* avec "(personal team)" indiqué, votre application expirera après 7 jours. Si vous sélectionnez une *team* sans "(personal team)", votre application expirera après un an. Si vous vous n'êtes jamais inscrit(e) pour un compte de développeur gratuit, vous n'allez pas avoir "(personal team)" affiché. Veuillez vérifier que vous sélectionnez "*automatically manage signing*" et que cette option demeure sélectionnée pour tout montage de votre application Loop.
@@ -85,7 +85,7 @@ Une *target* bien signé aura un *provisioning profile* et un *signing certifica
 ## Personnalisation du code Loop
 **Nouveaux utilisateurs de Loop :** des personnalisations du code ne sont pas requises. Au fur et à mesure que vous utilisez votre application Loop, vous pourriez vouloir changer quelques fonctionnements. Vous pouvez toujours mettre à jour votre application Loop pour ajouter des personnalisations plus tard.
 
-Si vous voulez des configurations personnalisées pour votre application Loop pour l'iPhone ou pour l'Apple Watch, faites-les maintenant avant de continuez. Suivez les étapes [sur cette page](https://https://cyoung1024.github.io/guide-loop-fr/construire/personnalisation/). Si vous connaissez le langage Swift, vous pouvez aussi personnaliser ce que vous voulez.
+Si vous voulez des configurations personnalisées pour votre application Loop pour l'iPhone ou pour l'Apple Watch, faites-les maintenant avant de continuez. Suivez les étapes [sur cette page](https://loopkit.github.io/loopdocs/build/code_customization/). Si vous connaissez le langage Swift, vous pouvez aussi personnaliser ce que vous voulez.
 
 Après avoir fini avec les personnalisations, veuillez revenir ici pour continuer.
 
@@ -106,7 +106,7 @@ ARRÊTEZ. *Lisez cette partie minutieusement, méticuleusement ; en bref : avec 
 
 Ceci est pour votre sécurité.
 
-Certains continue à ignorer les avertissements de sécurité et ca met en péril non seulement leur santé mais aussi leurs vies.
+Certains continuent à ignorer les avertissements de sécurité et ca met en péril non seulement leur santé mais aussi leurs vies.
 
 > 
 > **N'IMPROVISER PAS LA MISE EN PLACE DE CE SYSTÈME**
