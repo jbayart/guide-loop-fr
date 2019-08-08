@@ -33,7 +33,7 @@ Enfin, vous allez activer *Line Numbers* afin de faciliter quelques étapes que 
 
 Vous avez fini de mettre en place Xcode. Vous n’allez pas devoir refaire ce processus à aucun moment - Xcode se souviendra de ces réglages.
 
-### Prochaine étape : construire Loop - disponible bientôt !
+### Prochaine étape : [Construire Loop](https://cyoung1024.github.io/guide-loop-fr/construire/construire-loop)
 
 ### [Cliquez ici pour voir la page d’origine](https://loopkit.github.io/loopdocs/build/build-xcode/)
 
