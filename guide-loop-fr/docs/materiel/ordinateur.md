@@ -7,11 +7,11 @@ Les versions les plus récentes des logiciels sont :
 
 | Logiciel | Version |
 | --- | --- |
-| iOS | 12.3.1 |
-| macOS | 10.14.5 |
-| Xcode | 10.2.1 |
-| Loop | 1.9.5 |
-| watchOS | 5.2 |
+| iOS | 12.4 |
+| macOS | 10.14.6 |
+| Xcode | 10.3 |
+| Loop | 1.9.6 |
+| watchOS | 5.3 |
 
 La façon dont Apple met à jour ses produits est que l’une des mises à jours d’un seul périphérique entraîne les mises à jour des autres. Par exemple, si vous mettez à jour iOS sur l’iPhone, vous pourriez être obligé(e) de mettre à jour Xcode pour installer la nouvelle version de Loop. Et le nouveau Xcode oblige les développeurs de Loop à mettre à jour le code de Loop. Enfin, le nouveau Xcode requiert souvent une mise à jour macOS aussi.
 
