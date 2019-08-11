@@ -173,6 +173,24 @@
   </li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mise en place <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../mise-en-place/apercu-mise-en-place/">Apercu mise en place</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Utilisation <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../utilisation/apercu-utilisation/">Apercu utilisation</a>
+</li>
+                        </ul>
+                    </li>
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -207,6 +225,10 @@
             <li><a href="#personnalisation-du-code-loop">Personnalisation du code Loop</a></li>
             <li><a href="#connecter-lapple-watch">Connecter l'Apple Watch</a></li>
             <li><a href="#entracte">ENTRACTE</a></li>
+            <li><a href="#monter-loop">Monter Loop</a></li>
+            <li><a href="#en-attendant">En attendant...</a></li>
+            <li><a href="#montage-reussi">Montage réussi</a></li>
+            <li><a href="#montage-echoue">Montage échoué</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -220,21 +242,21 @@
 <p><a href="https://github.com/LoopKit/Loop/archive/omnipod-testing.zip">Loop : branche Omnipod-testing</a></p>
 <blockquote>
 <p>Master versus dev : laquelle choisir ?
-Qu’est-ce que la différence ? Le code de Loop réside sur un site web qui s’appelle <a href="https://github.com">GitHub</a>. Tout projet sur GitHub utilise des dépositaires. Une dépositaire est comme une bibliothèque d’un projet, contenant des dossiers et archives des versions (ici appelé <em>branche</em>) du projet. La branche master est considéré comme une branche stable, une version stable, du projet. Des nouvelles fonctionnalités ou options que vous pouvez entendre parler de sont d’abord examinées et mises en place dans une branche dev (de « développement »). Si vous entendez parler des « nouvelles fonctionnalités » en train d’être testées, ce sont des choses qui peuvent éventuellement être ajoutées dans la branche master, une fois les bogues éliminées. Si vous choisissez une branche testing, comme dev ou Omnipod, soyez prêt(e) à ce que des réparations soient fréquentes et mettre à jour votre application Loop dès qu’annoncé.
-<strong>Omnipod Loop est toujours considéré comme expérimental est en cours de développement. Si vous voulez monter une version de Loop qui inclut Omnipod, vous devez sélectionner la branche Omnipod-testing ci-dessus.</strong> Gardez en tête que la branche dev aura plus de bogues ou des problèmes techniques. Au moment où vous les rencontre, veuillez vérifier les guides tout d’abord pour voir si votre soucis a déjà une solution. Si vous pensez que ce que vous voyez est véritablement étrange, signalez ce problème en créant [un « <em>New Issue</em> ici]( sur GitHub. Vous pouvez aussi regardez dans la liste de problèmes techniques déjà signalés. C’est possible que d’autres personnes ont déjà rencontré votre problème aussi.
+Quelle est la différence ? Le code de Loop est hebergé sur un site web qui s’appelle <a href="https://github.com">GitHub</a>. Tout projet sur GitHub utilise des dépôts. Un dépôt est comme une bibliothèque d’un projet, contenant des dossiers et archives des versions (ici appelé <em>branche</em>) du projet. La branche master est considérée comme une branche stable, une version stable, du projet. Des nouvelles fonctionnalités ou options que vous pouvez entendre parler de sont d’abord examinées et mises en place dans une branche dev (de « développement »). Si vous entendez parler des « nouvelles fonctionnalités » en train d’être testées, ce sont des choses qui peuvent éventuellement être ajoutées dans la branche master, une fois les bogues éliminées. Si vous choisissez une branche testing, comme dev ou Omnipod, soyez prêt(e) à ce que des corrections soient fréquentes et mettez à jour votre application Loop dès qu’annoncé.
+<strong>Omnipod Loop est toujours considéré comme expérimental est en cours de développement. Si vous voulez monter une version de Loop qui inclut Omnipod, vous devez sélectionner la branche Omnipod-testing ci-dessus.</strong> Gardez en tête que la branche dev aura plus de bogues ou des problèmes techniques. Au moment où vous les rencontrez, veuillez vérifier les guides tout d’abord pour voir si votre souci a déjà une solution. Si vous pensez que ce que vous voyez est vraiment étrange, signalez ce problème en créant <a href="https://github.com/loopkit/loop/issues">une « <em>New Issue</em> »  ici</a> sur le GitHub de Loop. Vous pouvez aussi regardez dans la liste de problèmes techniques déjà signalés. Il est possible que d’autres personnes aient déjà rencontré votre problème aussi.
 </p>
 <p>ATTENTION : il est hautement recommandé de laisser votre code Loop dans votre fichier de Téléchargements. Si vous gardez votre code Loop dans un fichier différent - comme Documents ou Bureau - veuillez vérifier que ce fichier <strong>n’est pas accessible à iCloud Drive</strong>. Placer votre code Loop dans un fichier sur iCloud Drive empêchera Loop de se construire avec succès. Comment savoir si un fichier est sur iCloud Drive ? Allez dans Préférences Système. Si vos préférences système s’affiche comme ci-dessus, vos fichiers Documents et Bureau sont sur iCloud Drive et <strong>ne sont alors pas appropriés</strong> pour l’emplacement de Loop.
 <img alt="icloud" src="../img/icloud.png" />
-Selon vos réglages du navigateur web, votre téléchargement Loop dézippera automatiquement, ou non. S’il ne dézippe pas tout seul, vous pouvez clic-droit et choisir « ouvrir avec » Archive Utility. CEPENDANT, si vous avez déjà un fichier <code>Loop-master</code>d’un téléchargement précédent, le nom du prochain fichier sera <code>Loop-master (1)</code>. Le problème c’est que ce nom contient un espace... et des espaces dans le nom du fichier entraîne des échec de construction de Loop. Donc, soit vous supprimez les anciens fichiers de Loop avant de télécharger / dézipper votre nouveau code Loop, soit vous renommer le fichier pour vous assurez qu’il n’y a aucun espace dans le nom du fichier.
+Selon les réglages de votre navigateur web, votre téléchargement Loop dézippera automatiquement, ou non. S’il ne dézippe pas tout seul, vous pouvez clic-droit et choisir « ouvrir avec » Utilitaire d'archive. CEPENDANT, si vous avez déjà un fichier <code>Loop-master</code> d’un téléchargement précédent, le nom du prochain fichier sera <code>Loop-master (1)</code>. Le problème c’est que ce nom contient un espace... et des espaces dans le nom du fichier entraîne des échecs de construction de Loop. Donc, soit vous supprimez les anciens fichiers de Loop avant de télécharger / dézipper votre nouveau code Loop, soit vous renommez le fichier pour vous assurez qu’il n’y a aucun espace dans le nom du fichier.
 <img alt="space" src="../img/space.png" />
 </p>
 </blockquote>
 <h2 id="ouvrir-loop-dans-xcode">Ouvrir Loop dans Xcode</h2>
-<p>Allez dans votre fichier Téléchargements, ouvrir le fichier <code>Loop-master</code> (peut importe le nom que vous avez donné, mais vérifiez encore une fois qu’il n’y ait pas d’espaces dans le nom comme détaillé ci-dessus), et double-clic sur Loop.xcodeproj. Pour Omnipod Loop, le fichier s’appellerait <code>Loop-omnipod-testing</code>.</p>
+<p>Allez dans votre fichier Téléchargements, ouvrir le fichier <code>Loop-master</code> (peu importe le nom que vous avez donné, mais vérifiez encore une fois qu’il n’y ait pas d’espaces dans le nom comme détaillé ci-dessus), et double-clic sur Loop.xcodeproj. Pour Omnipod Loop, le fichier s’appellerait <code>Loop-omnipod-testing</code>.</p>
 <p><img alt="loop-proj-folder" src="../img/loop-proj-folder.png" /></p>
-<p>Un avertissement pourrait s’afficher, vous demandant si vous voulez vraiment ouvrir ce document. Cliquez sur « Ouvrir ». Xcode va ensuite faire son travail et organiser tous les éléments du projet Loop, ce qui peut prendre quelques minutes.</p>
+<p>Un avertissement pourrait s’afficher, vous demandant si vous voulez vraiment ouvrir ce document. Cliquez sur « Ouvrir ». Xcode va ensuite faire son travail et organiser tous les éléments du projet Loop, ce qui peut prendre quelques minutes.</p>
 <p><img alt="warning" src="../img/warning.jpg" /></p>
-<p>Une fois Xcode a fini d’indexer tous les fichiers et éléments, ils s’afficheront dans la colonne à gauche (si vous ne les voyez pas, cliquez sur l’icône à l’image d’un fichier bleu, en haut de cette colonne). Tout en haut, cliquez sur « Loop » en bleu, la première option sur la liste. Après, cliquez sur la boîte au milieu de l’écran pour faire afficher les cibles. Les quartes cibles, ou <em>targets</em>, que l’on signera sont désormais visibles.</p>
+<p>Une fois qu'Xcode a fini d’indexer tous les fichiers et éléments, ils s’afficheront dans la colonne à gauche (si vous ne les voyez pas, cliquez sur l’icône à l’image d’un fichier bleu, en haut de cette colonne). Tout en haut, cliquez sur « Loop » en bleu, la première option sur la liste. Après, cliquez sur la boîte au milieu de l’écran pour faire afficher les cibles. Les quartes cibles, ou <em>targets</em>, que l’on signera sont désormais visibles.</p>
 <p><img alt="targets" src="../img/targets.png" /></p>
 <h2 id="brancher-liphone">Brancher l’iPhone</h2>
 <p>Branchez votre iPhone via son câble pour le lier avec votre ordinateur. Sélectionnez votre iPhone dans la liste des appareils. Le nom de <strong>votre</strong> iPhone devrait être la première option sur cette liste. Ne cliquez pas sur l’un des simulateurs indiqué sous votre iPhone.</p>
@@ -245,10 +267,14 @@ Selon vos réglages du navigateur web, votre téléchargement Loop dézippera au
 <p><img alt="select_device" src="../img/select_device.png" /></p>
 <p><img alt="your_device" src="../img/your_device.png" /></p>
 <blockquote>
-<p>Les étapes suivantes ne sont typiquement nécessaires que lors de la création de votre application Loop. Elles ne sont pas obligatoires pour les montages suivants.
-* Si c'est la première fois que votre iPhone est branché sur votre ordinateur, vous devez ouvrir l'iPhone est choisir "Faire confiance à cet ordinateur" avant de continuer.</p>
+<p>Les étapes suivantes ne sont typiquement nécessaires que lors de la création de votre application Loop. Elles ne sont pas obligatoires pour les montages suivants.</p>
 <ul>
-<li>Si c'est la première fois que vous montez une application sur votre iPhone via votre compte de développeur Apple, vous devez faire enregistrer votre appareil dans votre compte de développeur. L'écran d'enregistrement, comme ci-dessous, pourrais s'afficher quand votre iPhone est sélectionné. Si les pop-up n'apparaissent pas immédiatement, il y en aura un plus tard dans le processus. Que le pop-up apparaisse immédiatement ou plus tard ne change rien.</li>
+<li>
+<p>Si c'est la première fois que votre iPhone est branché sur votre ordinateur, vous devez ouvrir l'iPhone est choisir "Faire confiance à cet ordinateur" avant de continuer.</p>
+</li>
+<li>
+<p>Si c'est la première fois que vous montez une application sur votre iPhone via votre compte de développeur Apple, vous devez faire enregistrer votre appareil dans votre compte de développeur. L'écran d'enregistrement, comme ci-dessous, pourrais s'afficher quand votre iPhone est sélectionné. Si les pop-up n'apparaissent pas immédiatement, il y en aura un plus tard dans le processus. Que le pop-up apparaisse immédiatement ou plus tard ne change rien.</p>
+</li>
 </ul>
 <p><img alt="device1" src="../img/device1.png" /></p>
 <p><img alt="device2" src="../img/device2.png" /></p>
@@ -258,40 +284,111 @@ Selon vos réglages du navigateur web, votre téléchargement Loop dézippera au
 <h2 id="signing-targets">Signing Targets</h2>
 <blockquote>
 <p><strong>Pour les utilisateurs du compte gratuit :</strong></p>
-<p>Si vous utilisez un compte de développeur gratuit pour "signez les targets", vous devez effectuer une personnalisation de votre code Loop avant de continuer. En tant qu'utilisateur du compte gratuit, vous ne pouvez pas monter des applicaitons ayant les capacités Siri. Loop a des capacités Siri... Donc, vous devez les désactiver avant de procéder. Veuillez <a href="https://cyoung1024.github.io/guide-loop-fr/construire/personnalisation/#desactiver-siri">cliquer ici pour trouver les instructions</a> pour désactiver Siri. Une fois ceci fait, revenez ici pour finir cette étape.
+<p>Si vous utilisez un compte de développeur gratuit pour "signez les targets", vous devez effectuer une personnalisation de votre code Loop avant de continuer. En tant qu'utilisateur du compte gratuit, vous ne pouvez pas monter des applications ayant les capacités Siri. Loop a des capacités Siri... Donc, vous devez les désactiver avant de procéder. Veuillez <a href="https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities">cliquer ici pour trouver les instructions</a> pour désactiver Siri. Une fois ceci fait, revenez ici pour finir cette étape.
 </p>
 </blockquote>
-<p>Après avoir sélectionné votre iPhone (le <em>nom</em> de votre iPhone et non pas le type d'iPhone), vous êtes prêt(e) à signer les targets. Commencez avec le <em>target</em> de Loop, le premier sur la liste des targets, affiché à gauche comme indiqué ci-dessous. Sous l'option "signing", sélectionnez le menu où est marqué jusqu'à présent "none". Choissiez le <em>team</em> que vous voulez utiliser. Si vous sélectionnez un <em>team</em> avec "(personal team)" indiqué, votre application expirera après 7 jours. Si vous sélectionnez un <em>team</em> sans "(personal team)", votre application expirera après un an. Si vous vous n'êtes jamais inscrit(e) pour un compte de développeur gratuit, vous n'allez pas avoir "(personal team)" affiché. Veuillez vérifier que vous sélectionner "<em>automatically manage signing</em>" et que cette option demeure sélectionnée pour tout montage de votre application Loop.</p>
+<p>Après avoir sélectionné votre iPhone (le <em>nom</em> de votre iPhone et non pas le type d'iPhone), vous êtes prêt(e) à signer les targets. Commencez avec la <em>target</em> de Loop, le premier sur la liste des targets, affiché à gauche comme indiqué ci-dessous. Sous l'option "signing", sélectionnez le menu où est marqué jusqu'à présent "none". Choisissez la <em>team</em> que vous voulez utiliser. Si vous sélectionnez une <em>team</em> avec "(personal team)" indiqué, votre application expirera après 7 jours. Si vous sélectionnez une <em>team</em> sans "(personal team)", votre application expirera après un an. Si vous vous n'êtes jamais inscrit(e) pour un compte de développeur gratuit, vous n'allez pas avoir "(personal team)" affiché. Veuillez vérifier que vous sélectionnez "<em>automatically manage signing</em>" et que cette option demeure sélectionnée pour tout montage de votre application Loop.</p>
 <p><img alt="team" src="../img/team.png" /></p>
-<p>Une fois votre <em>team</em> choisi, Xcode créera autmatiquement ce que l'on appelle les <em>provisioning profiles</em> et les <em>signing certificates</em>. Si c'est la première fois que vous montez une application sur cet iPhone avec ce compte de développeur, Xcode pourrait vous redemander de régistrer votre appareil. Cliquez sur le bouton "<em>Register Device</em>" pour confirmer.</p>
+<p>Une fois votre <em>team</em> choisie, Xcode créera automatiquement ce que l'on appelle les <em>provisioning profiles</em> et les <em>signing certificates</em>. Si c'est la première fois que vous montez une application sur cet iPhone avec ce compte de développeur, Xcode pourrait vous redemander d'enregistrer votre appareil. Cliquez sur le bouton "<em>Register Device</em>" pour confirmer.</p>
 <p><img alt="register_device" src="../img/register_device.png" /></p>
-<p>Un <em>target</em> bien signé aura un <em>provisioning profile</em> et un <em>signing certificate</em> comme montré ci-dessous. Cliquez sur chacun des <em>targets</em>, et répéter ces étapes en choissisant le même <em>team</em> que celui du <em>target</em> Loop.</p>
+<p>Une <em>target</em> bien signé aura un <em>provisioning profile</em> et un <em>signing certificate</em> comme montré ci-dessous. Cliquez sur chacune des <em>targets</em>, et répéter ces étapes en choisissant la même <em>team</em> que celle de la <em>target</em> Loop.</p>
 <p><img alt="success" src="../img/success.png" /></p>
 <blockquote>
-<p>À noter que les branches ayant Omnipod comme pompe possible auront un cinquième <em>target</em> : Learn.</p>
+<p>À noter que les branches ayant Omnipod comme pompe possible auront une cinquième <em>target</em> : Learn.</p>
 </blockquote>
 <h2 id="personnalisation-du-code-loop">Personnalisation du code Loop</h2>
-<p><strong>Nouvels utilisateurs de Loop :</strong> des personnalisations du code ne sont pas requises. Au fur et à measure que vous utilisez votre application Loop, vous pourriez vouloir changer quelques fonctionnements. Vous pouvez toujours mettre à jour votre application Loop pour ajouter des personnalisations plus tard.</p>
-<p>Si vous voulez des configurations personnalisées pour votre application Loop pour l'iPhone ou pour l'Apple Watch, faites-les maintenant avant de continuez. Suivez les étapes <a href="https://https://cyoung1024.github.io/guide-loop-fr/construire/personnalisation/">sur cette page</a>. Si vous connaissez le langage Swift, vous pouvez aussi personnaliser ce que vous voulez.</p>
+<p><strong>Nouveaux utilisateurs de Loop :</strong> des personnalisations du code ne sont pas requises. Au fur et à mesure que vous utilisez votre application Loop, vous pourriez vouloir changer quelques fonctionnements. Vous pouvez toujours mettre à jour votre application Loop pour ajouter des personnalisations plus tard.</p>
+<p>Si vous voulez des configurations personnalisées pour votre application Loop pour l'iPhone ou pour l'Apple Watch, faites-les maintenant avant de continuez. Suivez les étapes <a href="https://loopkit.github.io/loopdocs/build/code_customization/">sur cette page</a>. Si vous connaissez le langage Swift, vous pouvez aussi personnaliser ce que vous voulez.</p>
 <p>Après avoir fini avec les personnalisations, veuillez revenir ici pour continuer.</p>
 <h2 id="connecter-lapple-watch">Connecter l'Apple Watch</h2>
-<p><strong>Nouveaux utilisateurs de l'Apple Watch :</strong> si vous avez une nouvelle Apple Watch et voulez l'utiliser, jumelez la Watch avec l'iPhone avant de continuer. Si vous achetez une nouvelle Watch après avoir installé l'application Loop, vous allez devoir refaire la construction de Loop. (Ne vous inquiètez pas, c'est extrêmement facile.)</p>
+<p><strong>Nouveaux utilisateurs de l'Apple Watch :</strong> si vous avez une nouvelle Apple Watch et voulez l'utiliser, jumelez la Watch avec l'iPhone avant de continuer. Si vous achetez une nouvelle Watch après avoir installé l'application Loop, vous allez devoir refaire la construction de Loop. (Ne vous inquiétez pas, c'est extrêmement facile.)</p>
 <p><strong>Utilisateurs existants de l'Apple Watch :</strong> Veuillez mettre à jour votre watchOS avant de monter Loop. La version actuelle de Loop requiert watchOS 4.1 ou plus récent.</p>
 <blockquote>
 <p><strong>Utilisateurs de la série 0 de l'Apple Watch :</strong></p>
-<p>Vous allez devoir faire un petit changement dans le code de Loop pour l'utiliser. Veuillez sélectionner le <em>target</em> WatchApp Extention, et sous "<em>Linked Frameworks and Libraries</em>" cliquez sur <code>+</code>et tapez "ClockKit" puis cliquez sur <code>Add</code>. Dans la colonne "<em>Status</em>" du rang nouveau <em>ClockKit</em>, changez "<em>Required</em>" en "<em>Optional</em>". Vous pouvez maintenant continuer avec les instrucitons qui suivent.
+<p>Vous allez devoir faire un petit changement dans le code de Loop pour l'utiliser. Veuillez sélectionner la <em>target</em> WatchApp Extention, et sous "<em>Linked Frameworks and Libraries</em>" cliquez sur <code>+</code>et tapez "ClockKit" puis cliquez sur <code>Add</code>. Dans la colonne "<em>Status</em>" du rang nouveau <em>ClockKit</em>, changez "<em>Required</em>" en "<em>Optional</em>". Vous pouvez maintenant continuer avec les instructions qui suivent.
 </p>
 </blockquote>
 <h2 id="entracte">ENTRACTE</h2>
 <p>ARRÊTEZ. <em>Lisez cette partie minutieusement, méticuleusement ; en bref : avec <strong>beaucoup</strong> d'attention</em>. N'ignoriez pas ce qui suit. C'est. Très. Important.</p>
 <p>Ceci est pour votre sécurité.</p>
-<p>Certains continue à ignorer les avertissements de sécurité et ca met en péril non seulement leur santé mais aussi leurs vies.</p>
+<p>Certains continuent à ignorer les avertissements de sécurité et ca met en péril non seulement leur santé mais aussi leurs vies.</p>
 <blockquote>
 <p><strong>N'IMPROVISER PAS LA MISE EN PLACE DE CE SYSTÈME</strong></p>
 <p>Continuez à lire ces guides pour finir la mise en place de Loop après avoir fini avec la construction. <em>Ne mettez aucun réglage dans votre application Loop sans avoir les yeux sous ces guides.</em>
 </p>
 </blockquote>
-<p>La section "Mise en place" doit être employée pour chaque réglage de Loop. <strong>Suivre ces guides pour les entrer.</strong> Il y a des avertissements de sécurité dans chaque partie. Et quand vous finissez la mise en place, vous devez impérativement lire la section "Utilisation"... <strong><em>AVANT D'UTILISER LOOP</em></strong>. Ne prenez pas un bolus, ni entrer des glucides, avant de lire la section Utilisation.</p></div>
+<p>La section "Mise en place" doit être employée pour chaque réglage de Loop. <strong>Suivre ces guides pour les entrer.</strong> Il y a des avertissements de sécurité dans chaque partie. Et quand vous finissez la mise en place, vous devez impérativement lire la section "Utilisation"... <strong><em>AVANT D'UTILISER LOOP</em></strong>. Ne prenez pas un bolus, ni entrer des glucides, avant de lire la section Utilisation.</p>
+<p>Lisez chaque section avec beaucoup d'attention. Oui, je me répète, mais c'est parce que personne ne suit ces conseils et cela met en danger votre vie ou celle de votre enfant. Lisez. Avec. Beaucoup. D'attention.</p>
+<p>Hélas, pour atténuer les risques, je suis obligée de mettre deux des avertissements les plus importants ici, pour que vous les lisiez maintenant.</p>
+<blockquote>
+<p><strong>DEUX ERREURS À EVITER</strong></p>
+<p>1) N'ENTREZ AUCUN REGLAGE DONT VOUS N'ETÊS PAS SÛR(E). Si vous ne connaissez pas vos réglages ou ce que les termes veulent dire, arrêtez. Lire les guides, tous les réglages sont expliqués. Demandez à votre endocrinologue ou diabétologue si vous n'avez pas les valeurs établies pour ces réglages. Ne devinez pas le facteur de sensibilité à l'insuline, le ratio glucides, débit de basale, ou limites d'administration.</p>
+<p>2) N'ENTREZ PAS DEUX FOIS LES MÊMES GLUCIDES. Quand vous entrez un repas dans Loop et cliquez sur <code>enregistrer</code>... ces glucides sont sauvegardés. Je répète : CES GLUCIDES SONG SAUVEGARDES, même si vous annulez le bolus. Ceci est un système de distrubution d'insuline automatique, et si le système croit que vous avez 60g de glucides actifs au lieu de 30g, il essayera de vous donnez l'insuline pour les 60g. L'erreur le plus commune des débutants : entrer les glucides pour un repas, les enregistrer, changer d'avis, et cliquer sur "annuler" dans le menu du bolus. Ensuite ils entrent un nouveau repas. Et maintenant, quand ils vont faire leur bolus... les glucides sont doublés. Si vous vous trompez dans votre calcul des glucides ou vous changez d'avis après avoir cliqué sur "enregistrer", cliquer ensuite sur le graphique vert des glucides sur l'écran principal de Loop et éditez les glucides déjà enregistrés. <strong><em>ANNULER UN BOLUS N'ANNULE PAS LES GLUCIDES. Vous devez supprimer ou éditer un repas enregistré si vous ne voulez plus de l'insuline pour.</em></strong>
+</p>
+</blockquote>
+<p>Bon allez, on continue... mais rappelez-vous, vous venez de me promettre d'utiliser le guide de mise en place et d'utilisation. Ne me brisez pas le cœur. Ce n'est pas gentil. Tenez votre promesse.</p>
+<h2 id="monter-loop">Monter Loop</h2>
+<p>Vous avez signé les <em>targets</em> ? Fini les personnalisations ? Votre Apple Watch est jumelée et mise à jour ? Votre iPhone est déverrouillé et branché à votre ordinateur ?</p>
+<p>Il est temps de finir l'installation de votre application Loop sur votre iPhone. Veuillez vérifier que le nom de votre iPhone est toujours sélectionné dans le menu et cliquez sur le bouton "play" pour lancer Xcode. Vous allez voir la progression du montage dans la fenêtre de statut. Les nouvelles constructions prennent environ 40 à 60 minutes selon la vitesse de l'ordinateur et de la connexion à l'Internet. <strong>Soyez patient(e).</strong> La progression va rester bloquée sur une étape pendant très longtemps, puis le reste va passer très vite. Chaque étape n'est pas égale en terme de temps. N'arrêtez pas la procédure. Xcode va <em>toujours</em> vous dire si le montage a réussi ou échoué. Il ne va jamais s'arrêter sans vous prévenir.</p>
+<p>Vous allez être interrompu(e) pendant le montage pour ce que l'on appelle le "<em>codesign</em>" ou trousseaux d'accès. Cependant, vous pouvez vous occuper en attendant le montage en lisant la partie ci-dessous nommé "En attendant..."</p>
+<p><img alt="build_button" src="../img/build_button.png" /></p>
+<p>Attention ! Pendant le tout premier montage sur un ordinateur, soyez prêt(e) pour la demande du trousseaux d'accès que vous allez voir à mi-chemin du processus.</p>
+<p><img alt="keychain-prompt" src="../img/keychain-prompt.png" /></p>
+<p>Quand vous voyez cette fenêtre vous devez taper le mot de passe de votre ordinateur puis cliquer sur "Always Allow". Ceci est normal, cette fenêtre va réapparaître 4 ou 5 fois de suite après chaque tentative. Par frustration, certains croire que la fenêtre est cassée comme elle réapparait et vont cliquer sur "Deny". Continuez à taper votre mot de passe et à cliquer sur "Always Allow", car Xcode va vous montrer cette fenêtre pour chaque <em>target</em>. Après 4 ou 5 fois, le montage procédera.</p>
+<h2 id="en-attendant">En attendant...</h2>
+<p>En attendant la fin du montage de Loop, veuillez lire cette section avec soin. Vous allez bientôt voir une application géniale qui va vous changer la vie. Et vous allez avoir si hâte de l'utiliser, surtout que l'utilisation est si facile, et vous allez débrancher votre téléphone et fermer l'ordinateur, et jamais revenir à ces guides.</p>
+<p>NE FAITES PAS CA.</p>
+<p>L'information dans ces guides est essentielle, il est primordial que vous lisez le tout. Quelques exemples d'informations importantes :</p>
+<ul>
+<li>Comment résoudre des <a href="https://loopkit.github.io/loopdocs/build/build_errors/">erreurs de montage</a> que vous pourrez rencontrer</li>
+<li>Quels sont les réglages disponibles dans Loop et comment les définir</li>
+<li>Comment entrer des glucides et que veut dire "durée d'absorption"</li>
+<li>Comment gérer des journées où vous êtes malade</li>
+<li>Comment utiliser les <em>overrides</em></li>
+<li>Quelle est la différence entre chaque modèle d'insuline</li>
+</ul>
+<p>Et pour le longue terme :</p>
+<ul>
+<li>
+<p>Ajoutez ces guides ainsi que ceux de <a href="https://loopdocs.org/">LoopDocs</a> et <a href="https://looptips.org/">LoopTips</a> à vos pages favorites</p>
+</li>
+<li>
+<p>Rejoignez le groupe anglais <a href="https://www.facebook.com/groups/TheLoopedGroup/?fref=nf">Looped</a> et le groupe <a href="https://www.facebook.com/groups/478980526199264/">Looped France</a></p>
+</li>
+<li>
+<p>Rejoignez le groupe <a href="https://groups.google.com/forum/#!forum/loop-ios-users">Loop Users</a> sur Google, pour recevoir des notifications en cas d'urgence.</p>
+</li>
+</ul>
+<h3 id="une-fois-le-montage-termine-nentrez-aucun-reglage-sans-avoir-lu-les-guides">Une fois le montage terminé, N'ENTREZ AUCUN REGLAGE SANS AVOIR LU LES GUIDES !</h3>
+<p>Plutôt, allez pas-à-pas avec les guides pour travailler sur ces sections importantes :</p>
+<ul>
+<li>Lisez la page <a href="https://loopkit.github.io/loopdocs/build/health/">Autorisations de Santé</a> pour vérifier que Loop enregistre correctement les données</li>
+<li>Commencez par suivre les instructions pour régler votre Loop correctement. CECI EST TRÈS IMPORTANT ! Il y a des avertissements de sécurité pour comment mettre en place votre application... donc s'il vous plaît, suivez ces guides : <a href="https://loopkit.github.io/loopdocs/operation/overview/">Utilisation de Loop</a></li>
+</ul>
+<p>La grande, grande majorité des questions trouvent leurs réponses dans ces guides. S'il vous plaît, ne les sous-estimez pas.</p>
+<h2 id="montage-reussi">Montage réussi</h2>
+<p>Si la construction de l'application s'est terminé avec succès, votre nouvelle application Loop va avoir un écran qui s'ouvre immédiatement sur l'iPhone demandant votre permission de vous envoyer des notifications ainsi que l'accès à l'application Santé. Veuillez permettre à Loop de vous envoyer des notifications. Sur le prochain écran, cliquez sur <code>Autoriser toutes les catégories</code> puis sur <code>Enregistrer</code> en haut à droit de votre écran.</p>
+<p>Maintenant que vous avez fini, je vous invite (oui, encore) de lire les guides qui suivent pour mettre en place et utiliser votre application.</p>
+<blockquote>
+<p><strong>Nouveaux utilisateurs :</strong></p>
+<p>Si cela est la première fois que vous avez installé une application sur votre téléphone en utilisant ce compte de développeur, vous allez peut-être recevoir une erreur comme ci-dessous. Ne vous inquiétez pas, Loop est bien installé sur votre téléphone mais il faut faire une étape de plus pour lui permettre de s'ouvrir. Cliquez sur "OK" et débrancher votre iPhone. (Si vous ne recevez pas de message d'erreur et l'application est bien installée, vous aurez quand même peut-être à aller dans).</p>
+<p>1) Allez dans les réglages de votre iPhone</p>
+<p>2) Cliquez sur Général</p>
+<p>3) Allez dans "Gestion de l'appareil", tout en bas du menu</p>
+<p>4) Cliquez sur votre nom / e-mail pour faire confiance au développeur</p>
+<p><img alt="trust_device" src="../img/trust_device.jpg" />
+</p>
+</blockquote>
+<h2 id="montage-echoue">Montage échoué</h2>
+<p>Si vous voyez un message disant "<em>Build failed</em>", vous allez probablement voir une liste d'alertes en rouge, à gauche de votre écran. Ces messages vont être la clé pour résoudre le(s) erreur(s).</p>
+<p><img alt="general-error" src="../img/general-error.jpg" /></p>
+<blockquote>
+<p><strong>Si votre montage échoue...</strong></p>
+<p>Vous devez aller sur la page <a href="https://loopkit.github.io/loopdocs/build/build_errors/">Erreurs</a> pour résoudre votre problème. Lire le(s) message(s), cherchez pour trouver le message qui correspond au vôtre et / ou l'image qui y correspond, puis suivez les instructions pour réparer l'erreur. Si vous avez besoin d'aide après avoir essayé la solution donnée, veuillez fournir les informations spécifiées dans la section "Demander de l'aide" pour faciliter le procès de dépannage... surtout en incluant des captures d'écran.
+</p>
+</blockquote>
+<h3 id="prochaine-etape-erreurs-disponible-bientot">Prochaine étape : erreurs - disponible bientôt !</h3>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/build/build-loop/">Cliquez ici pour voir la page d'origine</a></h3></div>
         </div>
 
         <footer class="col-md-12">
