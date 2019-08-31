@@ -44,6 +44,6 @@ Si vous commencez avec un compte gratuit et monter Loop, vous allez avoir une ap
 
 ### Prochaine étape : [Installer Xcode](https://cyoung1024.github.io/guide-loop-fr/construire/installer-xcode/)
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/build-developer/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step6/)
 
 

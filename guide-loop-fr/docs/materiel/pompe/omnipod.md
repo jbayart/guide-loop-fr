@@ -32,4 +32,4 @@ Insulet a annoncé le système DASH comme remplacement potentiel des pods Eros. 
 
 ![dash](img/dash.png)
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/setup/requirements/omnipod-pump/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step3/)

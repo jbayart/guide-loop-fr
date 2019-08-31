@@ -121,4 +121,4 @@ Medtronic ne vende pas classiquement le matériel pour la pompe directement aux 
 
 Pour ceux habitant en France, il suffit de demander à votre fournisseur soit de louer une pompe Medtronic pour avoir les matériels soit s'il serait d'accord pour vous fournir les matériels nécessaires en utilisant votre propre pompe Medtronic.
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step3)

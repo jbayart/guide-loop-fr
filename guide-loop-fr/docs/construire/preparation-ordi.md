@@ -43,5 +43,5 @@ Vous pouvez fermer l’application Terminal maintenant. On a terminé avec. Vous
 
 ### Prochaine étape : [Configuration du compte de développeur](https://cyoung1024.github.io/guide-loop-fr/construire/compte-dev/)
 
-### [Cliquez ici pour voir la page d’origine](https://loopkit.github.io/loopdocs/build/build-computer/)
+### [Cliquez ici pour voir la page d’origine](https://loopkit.github.io/loopdocs/build/step7/)
 

@@ -19,4 +19,4 @@ Dans les cas rares, il se peut que Loop n’arrive pas à “entendre” les tra
 ## Autres CGM non compatible nativement avec Loop
 Freestyle Libre (BluCon et Miaomiao), Eversense, Medtronic Guardian... voici quelques exemples de CGM qui ne fonctionnent pas nativement avec Loop. Si vous souhaitez utiliser l’un de ces CGM comme source des données, vous devez aller chercher les parties tierces qui font l’intégration entre le CGM et Loop. Ces guides ne montrent pas les méthodes alternatives des systèmes CGM non compatibles ou des applications comme Spike.
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/setup/requirements/cgm/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step4/)

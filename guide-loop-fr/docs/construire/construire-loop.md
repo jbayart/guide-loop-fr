@@ -231,4 +231,4 @@ Si vous voyez un message disant "*Build failed*", vous allez probablement voir u
 
 
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/build-loop/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step14/)

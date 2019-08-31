@@ -22,5 +22,5 @@ Cette magie vient du *bundle identifier*. Le *bundle identifier* est automatique
 
 Si vous commencez avec un compte gratuit et monter Loop, vous allez avoir une application Loop (que l'on dénommera Loop1). Quand vous passez au compte payant et monte Loop, vous allez monter toute une nouvelle application Loop sur l'iPhone (que l'on dénommera Loop2). Loop2 ne saura rien sur les réglages et les informations de Loop1, donc vous allez devoir entrer à nouveau tout réglage de Loop1 (taux de basale, ratio glucides, facteurs de sensibilité, etc) et configurer tout cela dans Loop2 après l'avoir monté. Vous devez ensuite supprimer Loop1 de votre iPhone - celui qui a été monté avec le compte gratuit - pour éviter tout conflit.
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/setup/requirements/appledev/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step6/)
 

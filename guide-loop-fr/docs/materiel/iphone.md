@@ -30,4 +30,4 @@ Allez dans les réglages de votre iPhone, puis dans `général`, puis `informati
 
 ![iOS-version](img/ios-version.png)
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/setup/requirements/iphone/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step2/)

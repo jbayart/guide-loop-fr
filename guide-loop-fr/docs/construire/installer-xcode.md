@@ -35,5 +35,5 @@ Vous avez fini de mettre en place Xcode. Vous n’allez pas devoir refaire ce pr
 
 ### Prochaine étape : [Construire Loop](https://cyoung1024.github.io/guide-loop-fr/construire/construire-loop)
 
-### [Cliquez ici pour voir la page d’origine](https://loopkit.github.io/loopdocs/build/build-xcode/)
+### [Cliquez ici pour voir la page d’origine](https://loopkit.github.io/loopdocs/build/step8/)
 

@@ -130,6 +130,6 @@ Si vous connaissez bien votre pompe et le Dexcom, voici d'autres idées :
 
 MAIS, après... il faut simplement attendre. **Vous ne pouvez pas en faire plus sans le RileyLink.** Cependant, si vous faites tout cela avant de recevoir le RL, vous serez prêt(e) à commencer tout de suite dès son arrivée.
 
-### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/)
+### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step5/)
 
 
