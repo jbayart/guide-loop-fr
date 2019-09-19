@@ -1,237 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="None">
-    
-    
-    <link rel="shortcut icon" href="./img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Guide de Loop</title>
-    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
-    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
-    <link href="./css/base.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/highlight.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="./js/bootstrap-3.3.7.min.js"></script>
-    <script src="./js/highlight.pack.js"></script>
-    
-      <script src="./js/elasticlunr.min.js"></script>
-    
-    <base target="_top">
-    <script>
-      var base_url = '.';
-      var is_top_frame = (window === window.parent);
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
         
-        var pageToc = [
-          {title: "Bienvenue sur Loop", url: "#_top", children: [
-              {title: "Introduction", url: "#introduction" },
-              {title: "Historique du d\u00e9veloppement", url: "#historique-du-developpement" },
-              {title: "Comment utiliser ces guides", url: "#comment-utiliser-ces-guides" },
-              {title: "Restez connect\u00e9(e) !", url: "#restez-connectee" },
-              {title: "Contribuez", url: "#contribuez" },
-          ]},
-        ];
-
-    </script>
-    <script src="./js/base.js"></script> 
-</head>
-
-<body>
-<script>
-if (is_top_frame) { $('body').addClass('wm-top-page'); }
-</script>
-
-<nav class="navbar wm-page-top-frame">
-  <div class="container-fluid wm-top-container">
-    
-    <div class="wm-top-tool pull-right wm-vcenter">
-      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
         
-        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
-          ><i class="fa fa-search" aria-hidden="true"></i></button>
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <title>Guide de Loop</title>
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script> 
+    </head>
 
-        <div class="input-group input-group-sm wm-top-search">
-          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
-          <span class="input-group-btn" role="search">
-            
-            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
-            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
-            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </span>
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".">Guide de Loop</a>
         </div>
-      </form>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Construire <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="construire/apercu-construction/">Apercu construction</a>
+</li>
+                            
+<li >
+    <a href="construire/compte-dev/">Compte dev</a>
+</li>
+                            
+<li >
+    <a href="construire/construire-loop/">Construire loop</a>
+</li>
+                            
+<li >
+    <a href="construire/erreurs/">Erreurs</a>
+</li>
+                            
+<li >
+    <a href="construire/info-versions/">Info versions</a>
+</li>
+                            
+<li >
+    <a href="construire/installer-xcode/">Installer xcode</a>
+</li>
+                            
+<li >
+    <a href="construire/maj-loop/">Maj loop</a>
+</li>
+                            
+<li >
+    <a href="construire/nouvel-iphone/">Nouvel iphone</a>
+</li>
+                            
+<li >
+    <a href="construire/personnalisation/">Personnalisation</a>
+</li>
+                            
+<li >
+    <a href="construire/preparation-ordi/">Preparation ordi</a>
+</li>
+                            
+<li >
+    <a href="construire/sante/">Sante</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Faq <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="faq/faq-algo/">Faq algo</a>
+</li>
+                            
+<li >
+    <a href="faq/faq-cgm/">Faq cgm</a>
+</li>
+                            
+<li >
+    <a href="faq/faq-omni/">Faq omni</a>
+</li>
+                            
+<li >
+    <a href="faq/faq-rl/">Faq rl</a>
+</li>
+                            
+<li >
+    <a href="faq/glossaire/">Glossaire</a>
+</li>
+                            
+<li >
+    <a href="faq/questions-generales/">Questions generales</a>
+</li>
+                            
+<li >
+    <a href="faq/safety-tips/">Safety tips</a>
+</li>
+                            
+<li >
+    <a href="faq/utiliser-site/">Utiliser site</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Materiel <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="materiel/cgm/">Cgm</a>
+</li>
+                            
+<li >
+    <a href="materiel/developpeur-apple/">Developpeur apple</a>
+</li>
+                            
+<li >
+    <a href="materiel/iphone/">Iphone</a>
+</li>
+                            
+<li >
+    <a href="materiel/ordinateur/">Ordinateur</a>
+</li>
+                            
+<li >
+    <a href="materiel/rileylink/">Rileylink</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Pompe</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="materiel/pompe/medtronic/">Medtronic</a>
+</li>
+            
+<li >
+    <a href="materiel/pompe/omnipod/">Omnipod</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mise en place <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="mise-en-place/apercu-mise-en-place/">Apercu mise en place</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Utilisation <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="utilisation/apercu-utilisation/">Apercu utilisation</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="construire/apercu-construction/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </div>
+</div>
 
-    
-    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
-      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
-    </div>
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#bienvenue-sur-loop">Bienvenue sur Loop</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#historique-du-developpement">Historique du développement</a></li>
+            <li><a href="#comment-utiliser-ces-guides">Comment utiliser ces guides</a></li>
+            <li><a href="#restez-connectee">Restez connecté(e) !</a></li>
+            <li><a href="#contribuez">Contribuez</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    
-    
-
-    
-    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
-      
-      <div class="wm-top-title">
-        Guide de Loop<br>
-        
-      </div>
-    </a>
-  </div>
-</nav>
-
-  <div id="main-content" class="wm-page-top-frame">
-    
-<nav class="wm-toc-pane">
-  
-  <ul class="wm-toctree">
-        <li class="wm-toc-li wm-toc-lev1 "><a href="." class="wm-article-link wm-toc-text">Home</a>
-</li>
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Construire</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/apercu-construction/" class="wm-article-link wm-toc-text">Apercu construction</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/compte-dev/" class="wm-article-link wm-toc-text">Compte dev</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/construire-loop/" class="wm-article-link wm-toc-text">Construire loop</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/erreurs/" class="wm-article-link wm-toc-text">Erreurs</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/info-versions/" class="wm-article-link wm-toc-text">Info versions</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/installer-xcode/" class="wm-article-link wm-toc-text">Installer xcode</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/maj-loop/" class="wm-article-link wm-toc-text">Maj loop</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/nouvel-iphone/" class="wm-article-link wm-toc-text">Nouvel iphone</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/personnalisation/" class="wm-article-link wm-toc-text">Personnalisation</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/preparation-ordi/" class="wm-article-link wm-toc-text">Preparation ordi</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="construire/sante/" class="wm-article-link wm-toc-text">Sante</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Faq</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/faq-algo/" class="wm-article-link wm-toc-text">Faq algo</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/faq-cgm/" class="wm-article-link wm-toc-text">Faq cgm</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/faq-omni/" class="wm-article-link wm-toc-text">Faq omni</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/faq-rl/" class="wm-article-link wm-toc-text">Faq rl</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/glossaire/" class="wm-article-link wm-toc-text">Glossaire</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/questions-generales/" class="wm-article-link wm-toc-text">Questions generales</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/safety-tips/" class="wm-article-link wm-toc-text">Safety tips</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/utiliser-site/" class="wm-article-link wm-toc-text">Utiliser site</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Materiel</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="materiel/cgm/" class="wm-article-link wm-toc-text">Cgm</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="materiel/developpeur-apple/" class="wm-article-link wm-toc-text">Developpeur apple</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="materiel/iphone/" class="wm-article-link wm-toc-text">Iphone</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="materiel/ordinateur/" class="wm-article-link wm-toc-text">Ordinateur</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="materiel/rileylink/" class="wm-article-link wm-toc-text">Rileylink</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Pompe</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev3 "><a href="materiel/pompe/medtronic/" class="wm-article-link wm-toc-text">Medtronic</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev3 "><a href="materiel/pompe/omnipod/" class="wm-article-link wm-toc-text">Omnipod</a>
-</li>
-  </ul>
-</li>
-
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Mise en place</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="mise-en-place/apercu-mise-en-place/" class="wm-article-link wm-toc-text">Apercu mise en place</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Utilisation</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="utilisation/apercu-utilisation/" class="wm-article-link wm-toc-text">Apercu utilisation</a>
-</li>
-  </ul>
-</li>
-
-  </ul>
-</nav>
-
-    <div class="wm-content-pane">
-      <iframe class="wm-article" name="article"></iframe>
-    </div>
-  </div>
-
-<div class="container-fluid wm-page-content">
-  <a name="_top"></a>
-    
-
-    
-    
-      
-      
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="construire/apercu-construction/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="construire/apercu-construction/" class="btn btn-xs btn-link">
-        Apercu construction
-      </a>
-    </div>
-    
-  </div>
-
-    
-
-    <h1 id="bienvenue-sur-loop">Bienvenue sur Loop</h1>
+<h1 id="bienvenue-sur-loop">Bienvenue sur Loop</h1>
 <p>Ce qui suit est une collection de documents créés par les fondateurs et développeurs du système Loop, originellement écrits en anglais. Ils ont été traduits en français pour en faciliter l'accès à la communauté francophone. Sur chaque page vous trouverez un lien vers la page d'origine. Ces documents étant traduits au fur et à mesure par une seule personne, veuillez vérifier la source, <a href="https://loopkit.github.io/loopdocs/">LoopDocs</a>, régulièrement pour vous assurez d'avoir toute information à jour.</p>
 <h2 id="introduction">Introduction</h2>
 <p><a href="https://github.com/LoopKit/Loop">Loop</a> est un modèle d'application pour monter un système de distribution d'insuline automatisé. C'est une pierre de l'édifice bâti par de nombreux autres membres de la communauté diabétique.</p>
@@ -263,41 +259,52 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Dernièrement, le <a href="https://www.facebook.com/groups/478980526199264/">groupe Looped France</a>, un groupe d'entraide en français.</p>
 <h2 id="contribuez">Contribuez</h2>
 <p>Veuillez envisager soumettre des mises à jour ou améliorations au documentation que vous voulez partager en soumettant un <em>Pull Request</em> au <a href="https://github.com/LoopKit/loopdocs">loopdocs repo</a> si vous ne trouvez pas ce que vous cherchez sur les documents <strong>anglais</strong>, ou au <a href="https://github.com/cyoung1024/guide-loop-fr">guide-loop-fr repo</a> si vous ne trouvez pas ce que vous cherchez sur les documents <strong>français</strong>. Pour plus d'information sur comment contribuer à un projet <em>open source</em>, ce guide <a href="https://opensource.guide/how-to-contribute/">"How to Contribute to Open Source"</a> peut s'avérer utile. Dernièrement, veuillez lire la <a href="https://github.com/LoopKit/Loop/blob/master/LICENSE.md">licence de Loop</a> et le <a href="https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT</a> (code de conduite).</p>
-<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/">Cliquez ici pour voir la page d'origine</a></h3>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/">Cliquez ici pour voir la page d'origine</a></h3></div>
+        </div>
 
-  <br>
-    
-
-    
-    
-      
-      
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="construire/apercu-construction/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="construire/apercu-construction/" class="btn btn-xs btn-link">
-        Apercu construction
-      </a>
+        <footer class="col-md-12">
+            <ul>
+                Home
+                Construire
+                Faq
+                Materiel
+                Mise en place
+                Utilisation
+                </ul>
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        <script src="./js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
     </div>
-    
-  </div>
-
-    <br>
 </div>
 
-<footer class="col-md-12 wm-page-content">
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
-</footer>
-
-</body>
+    </body>
 </html>
+
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2019-09-19 12:55:49
+Build Date UTC : 2019-09-19 23:12:23
 -->
