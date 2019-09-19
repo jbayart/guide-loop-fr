@@ -18,6 +18,7 @@ nav:
   - 'Configurer le compte de développeur': 'construire/compte-dev.md'
   - 'Installer Xcode': 'construire/installer-xcode.md'
   - 'Construire Loop': 'construire/construire-loop.md'
+  - 'Erreurs': 'construire/erreurs.md'
 - Mise en place:
   - 'Aperçu': 'mise-en-place/apercu-mise-en-place.md'
 - Utilisation:
