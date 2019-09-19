@@ -227,7 +227,7 @@ Si vous voyez un message disant "*Build failed*", vous allez probablement voir u
 >
 
 
-### Prochaine étape : erreurs - disponible bientôt !
+### Prochaine étape : [erreurs](https://cyoung1024.github.io/guide-loop-fr/construire/construire-loop/)
 
 
 
