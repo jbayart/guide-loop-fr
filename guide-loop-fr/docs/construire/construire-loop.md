@@ -223,7 +223,7 @@ Si vous voyez un message disant "*Build failed*", vous allez probablement voir u
 >
 > **Si votre montage échoue...**
 >
-> Vous devez aller sur la page [Erreurs](https://loopkit.github.io/loopdocs/build/build_errors/) pour résoudre votre problème. Lire le(s) message(s), cherchez pour trouver le message qui correspond au vôtre et / ou l'image qui y correspond, puis suivez les instructions pour réparer l'erreur. Si vous avez besoin d'aide après avoir essayé la solution donnée, veuillez fournir les informations spécifiées dans la section "Demander de l'aide" pour faciliter le procès de dépannage... surtout en incluant des captures d'écran.
+> Vous devez aller sur la page [Erreurs](https://cyoung1024.github.io/guide-loop-fr/construire/construire-loop/) pour résoudre votre problème. Lire le(s) message(s), cherchez pour trouver le message qui correspond au vôtre et / ou l'image qui y correspond, puis suivez les instructions pour réparer l'erreur. Si vous avez besoin d'aide après avoir essayé la solution donnée, veuillez fournir les informations spécifiées dans la section "Demander de l'aide" pour faciliter le procès de dépannage... surtout en incluant des captures d'écran.
 >
 
 
