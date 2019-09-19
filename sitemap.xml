@@ -1,194 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
-     <loc>/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/construire/apercu-construction/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/compte-dev/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/construire-loop/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/erreurs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/info-versions/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/installer-xcode/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/maj-loop/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/nouvel-iphone/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/personnalisation/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/preparation-ordi/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/construire/sante/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/faq/faq-algo/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faq/faq-cgm/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faq/faq-omni/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faq/faq-rl/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc>/faq/glossaire/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/faq/questions-generales/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/faq/safety-tips/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/faq/utiliser-site/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/materiel/cgm/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/materiel/developpeur-apple/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/materiel/iphone/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/materiel/ordinateur/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/materiel/rileylink/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/mise-en-place/apercu-mise-en-place/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/utilisation/apercu-utilisation/</loc>
-     <lastmod>2019-09-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
 </urlset>
