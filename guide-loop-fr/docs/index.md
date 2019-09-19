@@ -1,6 +1,6 @@
 # Bienvenue sur Loop
 
-![dark-mode](img/dark-mode.png) ![light-mode](img/light-mode.png)
+![dark-mode](img/dark-mode.PNG) ![light-mode](img/light-mode.PNG)
 
 Ce qui suit est une collection de documents créés par les fondateurs et développeurs du système Loop, originellement écrits en anglais. Ils ont été traduits en français pour en faciliter l'accès à la communauté francophone. Sur chaque page vous trouverez un lien vers la page d'origine. Ces documents étant traduits au fur et à mesure par une seule personne, veuillez vérifier la source, [LoopDocs](https://loopkit.github.io/loopdocs/), régulièrement pour vous assurez d'avoir toute information à jour.
 
