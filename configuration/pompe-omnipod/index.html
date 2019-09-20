@@ -35,11 +35,11 @@
           {title: "Utilisateurs Omnipod", url: "#_top", children: [
               {title: "S\u00e9lectionner le type de pompe", url: "#selectionner-le-type-de-pompe" },
               {title: "S\u00e9lectioner le RileyLink", url: "#selectioner-le-rileylink" },
-              {title: "Delivery Limits and Basals", url: "#delivery-limits-and-basals" },
-              {title: "Pair POD", url: "#pair-pod" },
-              {title: "Insert Cannula", url: "#insert-cannula" },
-              {title: "Expiration Reminder", url: "#expiration-reminder" },
-              {title: "POD Settings", url: "#pod-settings" },
+              {title: "Limites de d\u00e9bit et basales", url: "#limites-de-debit-et-basales" },
+              {title: "Appairer le POD", url: "#appairer-le-pod" },
+              {title: "Ins\u00e9rer la canule", url: "#inserer-la-canule" },
+              {title: "Rappel d'expiration", url: "#rappel-dexpiration" },
+              {title: "R\u00e9glages du POD", url: "#reglages-du-pod" },
               {title: "Next Step: Add CGM", url: "#next-step-add-cgm" },
           ]},
         ];
@@ -98,21 +98,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <p></br></p>
 <h2 id="selectioner-le-rileylink">Sélectioner le RileyLink</h2>
-<p>Une liste de tous les RileyLinks aux alentours va s'afficher dans l'écran de configuration du RileyLink. Sélectionez votre RileyLink en faisant glisser le bouton pour qu'il s'affcihe vert puis pressez le bouton bleu <code>Continuer</code> en bas de l'écran. Si votre RileyLink n'apparait pas, assurez-vous que l'interrupteur 
-A list of all RileyLinks in the nearby area will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue <code>Continue</code> button at the bottom of the screen. If your RileyLink does not appear, make sure that its switch is turned on (switch slide up toward the case's keyring) and lipo is charged.</p>
+<p>Une liste de tous les RileyLinks aux alentours va s'afficher dans l'écran de configuration du RileyLink. Sélectionez votre RileyLink en faisant glisser le bouton pour qu'il s'affcihe vert puis pressez le bouton bleu <code>Continuer</code> en bas de l'écran. Si votre RileyLink n'apparait pas, assurez-vous que l'interrupteur est allumé (interrupteur glissé vers le haut en direction de l'attache porte-clés du boitier) et que la batterie est chargée.</p>
 <p align="center">
 <img src="../img/pod-rl.png" width="250">
 </p>
 
 <p></br></p>
-<h2 id="delivery-limits-and-basals">Delivery Limits and Basals</h2>
-<p>The next screen will offer two areas where you will need to enter information:</p>
+<h2 id="limites-de-debit-et-basales">Limites de débit et basales</h2>
+<p>L'écran suivant va vous demander deux informations :</p>
 <ul>
 <li>
-<p>Delivery Limits: Delivery Limits are both your maximum basal rate and your maximum bolus amount. Your maximum basal rate will limit how aggressive your Loop will be able to set temporary basals to treat high blood glucose. Typically, new users should set this value conservatively around 3 times your highest scheduled basal rate until your comfort and experience with Loop develops.</p>
+<p>Les limites de débit : les limites de débit concernent à la fois votre taux de basale maximum et votre bolus maximum. Votre taux de basale maximum va limiter l'aggressivité de Loop pour traiter les glycémies élevées avec les basales temporaires. Typiquement, les nouveaux utilisateurs doivent rentrer une valeur d'environ 3 fois leur plus haut débit basal programmé jusqu'à ce que leur confort et leur expérience avec Loop s'améliore.</p>
 </li>
 <li>
-<p>Basal Rates: Enter your scheduled basal rates, beginning at midnight. Consistent with PO use, the scheduled basal rates have a maximum of 24 entries, no 0 u/hr entries allows, and rate increments of 0.05 u/hr.</p>
+<p>Débits basaux : Entrez vos débits basaux programmés, en commençant à minuit. Du au contraintes du POD, les débits basaux programmés ont un maximum de 24 entrées, les entrées à 0 u/h ne sont pas autorisées et le taux augmente par tranche de 0.05 u/h.</p>
 </li>
 </ul>
 <p align="center">
@@ -120,44 +119,44 @@ A list of all RileyLinks in the nearby area will display in the RileyLink Setup 
 </p>
 
 <p></br></p>
-<p>When you finish entering these values, press the blue <code>Continue</code> button on the bottom of the POD Settings screen to continue with the next steps of POD setup.</p>
-<h2 id="pair-pod">Pair POD</h2>
+<p>Quand vous avez fini d'entrer ces valeurs, pressez le bouton bleu <code>Continuer</code> en bas de l'écran des réglages du pod pour continuer sur les prochaines étapes de configuration du POD.</p>
+<h2 id="appairer-le-pod">Appairer le POD</h2>
 <ol>
-<li>Place the POD near RileyLink</li>
-<li>Fill the POD with insulin until it beeps (minimum fill is 80 units)</li>
-<li>Click the <code>Pair</code> button</li>
-<li>Wait while the progress bar for priming completes</li>
-<li>Press the <code>Continue</code> button when the blue checkmark confirms priming is complete</li>
+<li>Placer le POD à proximité du RileyLink</li>
+<li>Remplissez le POD avec l'insuline au moins jusqu'à ce qu'il bip (remplissage minimum de 80 unités)</li>
+<li>Cliquer sur le bouton <code>Appairer</code></li>
+<li>Attendez pendant que la barre de progression de l'amorçage se termine</li>
+<li>Pressez le bouton <code>Continuer</code> quand la rond bleue confirme que l'amorçage s'est terminé</li>
 </ol>
 <p align="center">
 <img src="../img/pod-setup-01-pair.png" width="650">
 </p>
 
 <p></br></p>
-<h2 id="insert-cannula">Insert Cannula</h2>
+<h2 id="inserer-la-canule">Insérer la canule</h2>
 <ol>
-<li>Prepare your insertion site</li>
-<li>Remove the POD's needle cap and adhesive backing</li>
-<li>If the cannula is safely tucked away, apply the POD to your desired infusion site. If cannula is sticking out, press <code>cancel</code> in the upper right corner of the screen and try a new POD.</li>
-<li>Press the <code>Insert Cannula</code> button.</li>
-<li>Listen to the clicks filling the cannula, wait for insertion and the progress bar to complete. The number of clicks to insertion is not consistent. The cannula will deploy before the progress bar is completed.</li>
-<li>Confirm cannula has deployed by looking through the peep-hole on the POD.</li>
-<li>Press the <code>Continue</code> button</li>
+<li>Préparer votre site d'insertion</li>
+<li>Enlever la protection de l'aiguille du POD et le support de l'adhésif.</li>
+<li>Si la canule est bien caché à l'intérieur du pod , appliquez le POD sur le site de perfusion. Si la canule dépasse, pressez <code>annuler</code> dans le coin supérieur droit de l'écran et essayez avec un nouveau POD.</li>
+<li>Pressez le bouton <code>Inserer la canule</code>.</li>
+<li>Écoutez les clics remplissant la canule, attendez que l'insertion et que la barre de progression se termine. Le nombre de clics de l'insertion peut varier. La canule va se déployer avant que la barre de progression se termine.</li>
+<li>Vérifiez que la canule s'est bien déployée en regardant à travers le judas sur le POD.</li>
+<li>Pressez le bouton <code>Continuer</code></li>
 </ol>
 <p align="center">
 <img src="../img/pod-setup-02-insert.png" width="650">
 </p>
 
 <p></br></p>
-<h2 id="expiration-reminder">Expiration Reminder</h2>
-<p>Finish the setup with using the default expiration reminder time (2 hours before a full 3-days usage) or set the expiration notification to a more convenient time to your liking which will show up in your locked screen and vibrates at that time. Setup is complete and your POD is ready for use when you press the final button.</p>
+<h2 id="rappel-dexpiration">Rappel d'expiration</h2>
+<p>Finissez la configuration en choisissant le rappel d'expiration par défaut (2 heures avant les 3 jours complets d'utilisation) ou choisissez un moment qui vous convient mieux. La notification apparaitra sur votre écran de vérouillage et fera vibrer votre téléphone à ce moment. La configuration est terminée et votre POD est prêt à être utilisé dès lors que vous pressez le bouton final.</p>
 <p align="center">
 <img src="../img/pod-setup-03-complete.png" width="650">
 </p>
 
 <p></br></p>
-<h2 id="pod-settings">POD Settings</h2>
-<p>After the POD setup is completed, you will be on the POD Settings screen. This screen will provide a variety of important information about your POD. You can always come back to this screen later by tapping on the Omnipod image in your Loop settings.</p>
+<h2 id="reglages-du-pod">Réglages du POD</h2>
+<p>Dès que la configuration du POD est terminée, vous allez vous retrouver sur l'écran des réglages du POD. Cet écran va vous fournir diverses informations importantes sur votre POD. Vous pouvez toujours revenir sur cet écran plus tard en tapant sur l'image de l'Omnipod dans vos réglages Loop.</p>
 <p align="center">
 <img src="../img/long-pod-settings.jpeg" width="250">
 </p>
