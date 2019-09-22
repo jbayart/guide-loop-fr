@@ -19,7 +19,12 @@ nav:
   - 'Installer Xcode': 'construire/installer-xcode.md'
   - 'Construire Loop': 'construire/construire-loop.md'
   - 'Erreurs': 'construire/erreurs.md'
-- Mise en place:
-  - 'Aperçu': 'mise-en-place/apercu-mise-en-place.md'
+- Configuration de l'app:
+  - 'Aperçu': 'configuration/apercu-configuration.md'
+  - Ajouter une pompe:
+    - "Medtronic": 'configuration/pompes/pompe-medtronic.md'
+    - "Omnipod": 'configuration/pompes/pompe-omnipod.md'
 - Utilisation:
   - 'Aperçu': 'utilisation/apercu-utilisation.md'
+markdown_extensions:
+  - admonition
