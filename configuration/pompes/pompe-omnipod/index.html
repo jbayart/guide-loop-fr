@@ -40,7 +40,7 @@
               {title: "Ins\u00e9rer la canule", url: "#inserer-la-canule" },
               {title: "Rappel d'expiration", url: "#rappel-dexpiration" },
               {title: "R\u00e9glages du POD", url: "#reglages-du-pod" },
-              {title: "Next Step: Add CGM", url: "#next-step-add-cgm" },
+              {title: "Prochaine \u00e9tape : ajouter un CGM", url: "#prochaine-etape-ajouter-un-cgm" },
           ]},
         ];
 
@@ -166,7 +166,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <p></br></p>
 <h2 id="reglages-du-pod">Réglages du POD</h2>
-<p>Dès que la configuration du POD est terminée, vous allez vous retrouver sur l'écran des réglages du POD. Cet écran va vous fournir diverses informations importantes sur votre POD. Vous pouvez toujours revenir sur cet écran plus tard en tapant sur l'image de l'Omnipod dans vos réglages Loop.</p>
+<p>Dès que la configuration du POD est terminée, vous allez vous retrouver sur l'écran des réglages du POD. Cet écran va vous fournir diverses informations importantes sur votre POD. Vous pourrez toujours revenir sur cet écran plus tard en tapant sur l'image de l'Omnipod dans vos réglages Loop.</p>
 <p align="center">
 <img src="../img/pod_settings1.png" width="220">
 <img src="../img/pod_settings2.png" width="220">
@@ -174,25 +174,25 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </p>
 
 <p></br></p>
-<h4 id="device-information">Device Information</h4>
-<p>The first section has information regarding how long the POD has been active, expiration date and time, POD identifying information (if you have to call in for a POD failure).</p>
-<h4 id="pod-commands">POD commands</h4>
-<p>There are two commands that you can issue through Loop to the POD. </p>
+<h4 id="information-lie-a-lappareil">Information lié à l'appareil</h4>
+<p>La première section indique depuis quand le POD est actif, la date d'experation, le temps restant et des informations d'indentification du POD (si vous devez appeler le support client pour une panne de POD).</p>
+<h4 id="commandes">Commandes</h4>
+<p>Il y a deux commandes que vous pouvez envoyer au POD avec Loop.</p>
 <ul>
-<li>Suspend Delivery: This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely. </li>
+<li>Suspendre la distribution : cette commande va susprendre toute distribution d'insuline : basales, basales temporaires et bolus en cours. Quand vous pressez "Suspendre la distribution", toute distribution sera suspendue indéfiniment.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-resume.png" width="250">
 </p>
 
-<p>A banner notice will appear on the Loop's main screen when insulin delivery is suspended. </p>
+<p>Une bannière d'avertissement apparait sur l'écran principal de Loop quand la distribution d'insuline est suspendue.</p>
 <p align="center">
 <img src="../img/pod-hud-suspended.png" width="250">
 </p>
 
-<p>You will need to press <code>Tap to Resume</code> in the banner or the <code>Resume Delivery</code> button in the POD settings to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.</p>
+<p>Vous devrez presser <code>Toucher pour reprendre</code> dans la bannière ou le bouton <code>Reprendre la distribution</code> dans les réglages du POD pour reprendre le débit basal programmé et permettre à Loop de reprendre son activité. Les distributions de bolus ne seront pas continuées, si elles avaient été interrompues.</p>
 <ul>
-<li>Replace POD: This command should be used to deactivate a POD prior to replacing it.</li>
+<li>Remplacer le POD : cette commande doit être utilisée pour désactiver un POD avant de le remplacer.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-replace-pod.png" width="250">
@@ -200,7 +200,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <h4 id="configuration">Configuration</h4>
 <ul>
-<li>Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your POD. Using the standard setting, Loop sets the default to a full 3 days. You can set the reminder to any day and time up until 80 hours. This changes the PDM default which sets the alert always to 2 hours before a full 3-day (72 hours) run. This assumes you will not have run out of insulin before that time. In the event your POD runs out of insulin, then you will get a "POD empty" notification.</li>
+<li>Rappel d'expiration : vous pouvez changer le rappel d'expiration à un moment qui vous convient mieux pour avoir une notification pour remplacer le POD. En utilisant les réglages par défaut, Loop règle le rappel à 3 jours complets. Vous pouvez régler le rappel à n'importe quel jour et heure jsuqu'à 80 heures. Cela change du PDM qui règle une alerte toujours 2 heures avant les 3 jours complets (72 heures). Cela suppose que vous n'allez pas tomber à cours d'insuline avant ce moment. Dans le cas où cela arrive, vous aurez une notification "POD vide".</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-screen-expiration-reminder.png" width="250">
@@ -208,54 +208,54 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <p></br></p>
 <ul>
-<li>Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your POD. However, if you are going to be away from home for longer periods of time, you will want to update your POD's basal schedule to match local time by selecting the <code>Change Time Zone</code> command when convenient. Using this command will move your basal schedule on your current POD to the new time. If you start a new POD session the new time zone will be used. Please wait until you see <code>Succeeded</code> appear on the page to ensure the command has successfully been received by the POD.</li>
+<li>Changer le fuseau horaire : Si vous voyagez pour une courte période, vous n'avez pas à vous occuper de changer l'heure de votre POD. En revanche, si vous allez être loin de chez vous pour une plus longue période, vous allez vouloir mettre à jour la programmation de basale de votre POD pour qu'elle corresponde à l'heure locale en séléctionant la commande <code>Changer le fuseau horaire</code> quand cela vous convient. Utiliser cette commande va décaler la programmation de basale sur votre POD à une nouvelle heure. Si vous démarrez un nouveau POD, le nouveau fuseau horaire sera utilisé. S'il vous plait, attendez de voir <code>Réussi</code> apparaître sur la page pour être sûr que la commande a bien été reçu par le POD.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-change-timezone.png" width="250">
 </p>
 
 <ul>
-<li>Test Command: This command is used only by the developers to test Omnipod commands in Loop. It currently issues a "get status" command and can be used to update your screen details if needed or force a fault error to generate in the issue report after getting a screaming POD.</li>
+<li>Commande de test : Cette commande est utilisée uniquement par les développeurs pour tester les commandes Omnipod dans Loop. Elle exécute actuellement une commande "Récupération du statut" et peut être utilisée pour avoir plus de détails à l'écran si besoin ou pour forcer une erreur pour générer un rapport d'incident après avoir eu un POD qui sonne.</li>
 </ul>
-<h4 id="status">Status</h4>
-<p>This section provides information about your POD's status. </p>
+<h4 id="statut">Statut</h4>
+<p>Cette section fournit des informations sur le statut de votre POD.</p>
 <ul>
-<li>Bolus Delivery: This line will let you know the % progress of any ongoing bolus. </li>
+<li>Distribution du bolus : cette ligne indique le % de progression en cas de bolus en cours.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-bolus-status.png" width="250">
 </p>
 
 <ul>
-<li>Basal Delivery: This line will let you know what is active: The normal basal <em>schedule</em>,the <em>U/hour</em> of a 30 minute Temp Basal or if the POD is <em>suspended</em>.</li>
+<li>Débit basal: Cette ligne indique quel débit est actif : le débit basal normal <em>programmé</em>, le débit basal <em>temporaire</em> de 30 minutes ou si le POD est <em>suspendu</em>.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-basal-delivery.png" width="250">
 </p>
 
 <ul>
-<li>Alarms: If your POD is screaming or beeping an alarm, this line will display information about the alarm. By clicking on this line, you can clear or "snooze" the alarm status.</li>
+<li>Alarmes : si votre POD sonne à cause d'une alarme, cette ligne donne des informations sur l'alarme. En cliquant sur cette ligne, vous pouvez effacer ou mettre en "snooze" l'alarme.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-alarms.png" width="250">
 </p>
 
 <ul>
-<li>Reservoir: Pods do not report the volume of insulin remaining in the reservoir until there are less than 50 units remaining. So, typically you will see "50+ U" in this line for quite a while with a new POD.</li>
+<li>Réservoir : les pods ne fournissent pas le volume d'insuline restant dans le réservoir jusqu'à ce qu'il reste 50 unités restantes. Donc, typiquement vous allez voir "50+ U" à cette ligne pour un moment avec un nouveau POD.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-reservoir.png" width="250">
 </p>
 
 <ul>
-<li>Insulin Delivered: This line is the total amount of insulin, both basal and bolus, delivered by the POD since it was activated.</li>
+<li>Insuline délivrée : Cette ligne donne le montant total d'insuline, à la fois basale et bolus, délivrée par le POD depuis qu'il a été activé.</li>
 </ul>
 <p align="center">
 <img src="../img/pod-settings-insulin-delivered.png" width="250">
 </p>
 
-<h2 id="next-step-add-cgm">Next Step: Add CGM</h2>
-<p>Congrats! You've added your POD to your Loop app. Now, click on the <code>Done</code> button in the upper right corner of your Pump Settings screen to take you back to the Loop's settings. Your next step is to <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/cgm/">Add CGM</a> to your Loop app. After all, without CGM data, your Loop won't loop.</p>
+<h2 id="prochaine-etape-ajouter-un-cgm">Prochaine étape : ajouter un CGM</h2>
+<p>Bravo ! Vous avez ajouté votre POD à l'app Loop. Maintenant, cliquer sur le bouton <code>Done</code> dans le coin supérieur droit dans vos réglages de pompe pour retourner sur les réglages de Loop. La prochaine étape est d'<a href="#">ajouter un CGM</a> à votre app Loop. Après tout, sans données CGM, votre Loop ne loopera pas.</p>
 
   <br>
     
