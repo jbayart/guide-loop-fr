@@ -17,7 +17,7 @@ var rootUrl = qualifyUrl(base_url);
 var searchIndex = null;
 var showPageToc = true;
 var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-
+/*
 var HttpClient = function() {
     this.get = function(aUrl, aCallback) {
         var anHttpRequest = new XMLHttpRequest();
@@ -39,7 +39,9 @@ client.get('https://api.github.com/repos/cyoung1024/Loop/commits/dev-spike', fun
 	var date = new Date(Date.parse(dateString));
 	var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit',
     minute:'2-digit'};
-    $('#date-spike').html(date.toLocaleDateString('fr-FR', options));
+    //$('#date-spike').html(date.toLocaleDateString('fr-FR', options));
+	$("<p> Dernière mise à jour dev-spike :" +  date.toLocaleDateString('fr-FR', options) + "</p>").appendTo(document.body);
+	
 });
 
 client.get('https://api.github.com/repos/Loopkit/Loop/commits/dev', function(response) {
@@ -48,8 +50,10 @@ client.get('https://api.github.com/repos/Loopkit/Loop/commits/dev', function(res
 	var date = new Date(Date.parse(dateString));
 	var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit',
     minute:'2-digit'};
-    $('#date-dev').html(date.toLocaleDateString('fr-FR', options));
+    //$('#date-dev').html(date.toLocaleDateString('fr-FR', options));
+	$("<p> Dernière mise à jour dev :" +  date.toLocaleDateString('fr-FR', options) + "</p>").appendTo(document.body);
 });
+*/
 
 var Keys = {
   ENTER:  13,
