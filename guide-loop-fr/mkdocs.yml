@@ -3,6 +3,7 @@ nav:
 - Home: 'index.md'
 - FAQ:
   - 'Questions Générales': 'faq/questions-generales.md'
+  - 'Dernières mises à jour': 'faq/lastUpdates.md'
 - Matériel:
   - Pompe insuline:
     - 'Medtronic': 'materiel/pompe/medtronic.md'
@@ -29,3 +30,5 @@ nav:
 markdown_extensions:
   - admonition
 theme: windmill
+extra_javascript:
+  - 'js/refreshUpdatesRepo.js' 
