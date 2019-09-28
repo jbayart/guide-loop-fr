@@ -31,5 +31,5 @@ client.get('https://api.github.com/repos/Loopkit/Loop/commits/dev', function(res
 	var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit',
     minute:'2-digit'};
     $(".dev").append(date.toLocaleDateString('fr-FR', options));
-    $(".dev").append(date.toLocaleDateString('en-EN', options));
+    //$(".dev").append(date.toLocaleDateString('en-EN', options));
 });
