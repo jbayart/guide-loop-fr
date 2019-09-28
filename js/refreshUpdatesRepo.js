@@ -19,9 +19,8 @@ client.get('https://api.github.com/repos/cyoung1024/Loop/commits/dev-spike', fun
     var date = new Date(Date.parse(dateString));
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit',
     minute:'2-digit'};
-    $(".dev-spike-fr").append(date.toLocaleDateString('fr-FR', options));
-    $(".dev-spike-en").append(date.toLocaleDateString('en-EN', options));
-    //$("<p> Dernière mise à jour dev-spike :" +  date.toLocaleDateString('fr-FR', options) + "</p>").appendTo(document.body);
+    $(".dev-spike").append(date.toLocaleDateString('fr-FR', options));
+    //$(".dev-spike").append(date.toLocaleDateString('en-EN', options));
 	
 });
 
@@ -31,7 +30,6 @@ client.get('https://api.github.com/repos/Loopkit/Loop/commits/dev', function(res
 	var date = new Date(Date.parse(dateString));
 	var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit',
     minute:'2-digit'};
-    $(".dev-fr").append(date.toLocaleDateString('fr-FR', options));
-    $(".dev-en").append(date.toLocaleDateString('en-EN', options));
-	//$("<p> Dernière mise à jour dev :" +  date.toLocaleDateString('fr-FR', options) + "</p>").appendTo(document.body);
+    $(".dev").append(date.toLocaleDateString('fr-FR', options));
+    $(".dev").append(date.toLocaleDateString('en-EN', options));
 });
