@@ -1,101 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Erreurs - Guide de Loop</title>
-    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
-    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
-    <link href="../../css/base.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/highlight.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="../../js/jquery-3.2.1.min.js"></script>
-    <script src="../../js/bootstrap-3.3.7.min.js"></script>
-    <script src="../../js/highlight.pack.js"></script>
-    
-    <base target="_top">
-    <script>
-      var base_url = '../..';
-      var is_top_frame = false;
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        var pageToc = [
-          {title: "Erreurs", url: "#_top", children: [
-              {title: "Commencez par les causes communes", url: "#commencez-par-les-causes-communes" },
-              {title: "Demandez de l'aide", url: "#demandez-de-laide" },
-              {title: "Trouver vos messages d\u2019erreur", url: "#trouver-vos-messages-derreur" },
-              {title: "No such module \u2018LoopKit\u2019", url: "#no-such-module-loopkit" },
-              {title: "Version de Carthage obsol\u00e8te", url: "#version-de-carthage-obsolete" },
-              {title: "Ne pas avoir utilis\u00e9 la bonne version de Xcode", url: "#ne-pas-avoir-utilise-la-bonne-version-de-xcode" },
-              {title: "Command Line Tools", url: "#command-line-tools" },
-              {title: "Pending Certificate Request", url: "#pending-certificate-request" },
-              {title: "Command CodeSign failed", url: "#command-codesign-failed" },
-              {title: "Mise \u00e0 jour du licence de d\u00e9veloppeur", url: "#mise-a-jour-du-licence-de-developpeur" },
-              {title: "Unrecognized arguments : \u2014cache-builds", url: "#unrecognized-arguments-cache-builds" },
-              {title: "Abord with Payload", url: "#abord-with-payload" },
-              {title: "Apple Watch : l\u2019application ne s\u2019affiche pas", url: "#apple-watch-lapplication-ne-saffiche-pas" },
-              {title: "Apple Watch : l\u2019application de s\u2019installe pas", url: "#apple-watch-lapplication-de-sinstalle-pas" },
-          ]},
-        ];
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Erreurs - Guide de Loop</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-    </script>
-    <script src="../../js/base.js"></script>
-      <script src="../../js/refreshUpdatesRepo.js"></script> 
-</head>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-<body>
-<script>
-if (is_top_frame) { $('body').addClass('wm-top-page'); }
-</script>
+    <body>
 
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
 
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Guide de Loop</a>
+                </div>
 
-<div class="container-fluid wm-page-content">
-  <a name="_top"></a>
-    
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../faq/questions-generales/">Questions Générales</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matériel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pompe insuline</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../materiel/pompe/medtronic/">Medtronic</a>
+</li>
+            
+<li >
+    <a href="../../materiel/pompe/omnipod/">Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../../materiel/cgm/">CGM</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/rileylink/">RileyLink</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/ordinateur/">Ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/iphone/">iPhone</a>
+</li>
+                                    
+<li >
+    <a href="../../materiel/developpeur-apple/">Compte de Développeur</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Construire <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../apercu-construction/">Aperçu</a>
+</li>
+                                    
+<li >
+    <a href="../preparation-ordi/">Préparation de l`ordinateur</a>
+</li>
+                                    
+<li >
+    <a href="../compte-dev/">Configurer le compte de développeur</a>
+</li>
+                                    
+<li >
+    <a href="../installer-xcode/">Installer Xcode</a>
+</li>
+                                    
+<li >
+    <a href="../construire-loop/">Construire Loop</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Erreurs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration de l'app <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../configuration/apercu-configuration/">Aperçu</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Ajouter une pompe</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../configuration/pompes/pompe-medtronic/">Medtronic</a>
+</li>
+            
+<li >
+    <a href="../../configuration/pompes/pompe-omnipod/">Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Utilisation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../utilisation/apercu-utilisation/">Aperçu</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-    
-    
-      
-    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../construire-loop/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../configuration/apercu-configuration/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="../../configuration/apercu-configuration/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="../../configuration/apercu-configuration/" class="btn btn-xs btn-link">
-        Aperçu
-      </a>
-    </div>
-    
-    <div class="wm-article-nav">
-      <a href="../construire-loop/" class="btn btn-xs btn-default pull-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../construire-loop/" class="btn btn-xs btn-link">
-        Construire Loop
-      </a>
-    </div>
-    
-  </div>
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#erreurs">Erreurs</a></li>
+            <li><a href="#commencez-par-les-causes-communes">Commencez par les causes communes</a></li>
+            <li><a href="#demandez-de-laide">Demandez de l'aide</a></li>
+            <li><a href="#trouver-vos-messages-derreur">Trouver vos messages d’erreur</a></li>
+            <li><a href="#no-such-module-loopkit">No such module ‘LoopKit’</a></li>
+            <li><a href="#version-de-carthage-obsolete">Version de Carthage obsolète</a></li>
+            <li><a href="#ne-pas-avoir-utilise-la-bonne-version-de-xcode">Ne pas avoir utilisé la bonne version de Xcode</a></li>
+            <li><a href="#command-line-tools">Command Line Tools</a></li>
+            <li><a href="#pending-certificate-request">Pending Certificate Request</a></li>
+            <li><a href="#command-codesign-failed">Command CodeSign failed</a></li>
+            <li><a href="#mise-a-jour-du-licence-de-developpeur">Mise à jour du licence de développeur</a></li>
+            <li><a href="#unrecognized-arguments-cache-builds">Unrecognized arguments : —cache-builds</a></li>
+            <li><a href="#abord-with-payload">Abord with Payload</a></li>
+            <li><a href="#apple-watch-lapplication-ne-saffiche-pas">Apple Watch : l’application ne s’affiche pas</a></li>
+            <li><a href="#apple-watch-lapplication-de-sinstalle-pas">Apple Watch : l’application de s’installe pas</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    
-
-    <h1 id="erreurs">Erreurs</h1>
+<h1 id="erreurs">Erreurs</h1>
 <p>Il existe deux types d'erreurs qui peuvent vous arriver : des avertissements jaunes et des alertes rouges. Vous allez voir ces avertissements et alertes dans la colonne à gauche de votre fenêtre Xcode.</p>
 <p><strong>Des avertissements jaunes</strong> n'entraînent pas l'échec de construction, ce sont simplement des avertissements. Parfois, une version de Loop peut avoir des petites divergences qui entraînent ces avertissements jaunes. Ignorez-les. N'essayez pas de les résoudre. Laissez-les.</p>
 <p><strong>Des alertes rouges</strong> doivent être résolues avant de continuer. Les étapes ci-dessous vont vous expliquer comment les résoudre selon le type d'alerte que vous voyez.</p>
@@ -199,7 +307,7 @@ Si vous utilisez le code pour Omnipod Loop, Loop dev, ou avez iOS 12.2 installé
 <p>3)    Réessayez de monter votre application Loop. Si votre ordinateur redemande de permettre l’accès au Trousseau, veuillez sélectionner "Toujours".</p>
 <h2 id="mise-a-jour-du-licence-de-developpeur">Mise à jour du licence de développeur</h2>
 <p>Message d’erreur : <strong>"The Apple Developer Program License Agreement has been updated, In order to access certain membership resources, you must accept the latest license agreement."</strong></p>
-<p>Solution : veuillez (accèderez à votre compte de développeur)[ https://developer.apple.com/account/] et accepter à nouveau les conditions.</p>
+<p>Solution : veuillez <a href="https://developer.apple.com/account/">accédez à votre compte de développeur</a> et accepter à nouveau les conditions.</p>
 <p><img alt="license" src="../img/license.png" /></p>
 <h2 id="unrecognized-arguments-cache-builds">Unrecognized arguments : —cache-builds</h2>
 <p>Message d’erreur : <strong>"Unrecognized arguments: --cache-builds"</strong></p>
@@ -224,44 +332,83 @@ Si vous utilisez le code pour Omnipod Loop, Loop dev, ou avez iOS 12.2 installé
 <p>Si l’application s’affiche sur la liste des applications disponibles mais en appuyant sur "installer" l’animation du cercle commence mais affiche à nouveau l’option de l’installer, veuillez brancher votre iPhone à l’ordinateur et ouvrir Xcode. Sur votre Watch, cherchez pour l’option de "Trust this computer". Allez en bas de l’écran de la Watch et cliquez sur "Trust" (ou "faire confiance").</p>
 <p>Maintenant il faut effectuer une étape de plus avant de reconstruire l’application. Allez dans la barre menu de Xcode et sélectionnez "Clean Build Folder" dans le menu "Product". Construire votre application Loop à nouveau.</p>
 <h3 id="prochiane-etape-personnalisation-du-code-disponible-bientot">Prochiane étape : personnalisation du code - disponible bientôt !</h3>
-<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/build/build_errors/">Cliquez ici pour voir la page d'origine</a></h3>
+<h3 id="cliquez-ici-pour-voir-la-page-dorigine"><a href="https://loopkit.github.io/loopdocs/build/build_errors/">Cliquez ici pour voir la page d'origine</a></h3></div>
+        </div>
 
-  <br>
-    
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
-    
-    
-      
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="../../configuration/apercu-configuration/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="../../configuration/apercu-configuration/" class="btn btn-xs btn-link">
-        Aperçu
-      </a>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
     </div>
-    
-    <div class="wm-article-nav">
-      <a href="../construire-loop/" class="btn btn-xs btn-default pull-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../construire-loop/" class="btn btn-xs btn-link">
-        Construire Loop
-      </a>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
     </div>
-    
-  </div>
-
-    <br>
 </div>
 
-<footer class="col-md-12 wm-page-content">
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
-</footer>
-
-</body>
+    </body>
 </html>
