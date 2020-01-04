@@ -3,22 +3,27 @@ nav:
 - Home: 'index.md'
 - FAQ:
   - 'Questions Générales': 'faq/questions-generales.md'
-- Matériel:
-  - Pompe insuline:
-    - 'Medtronic': 'materiel/pompe/medtronic.md'
-    - 'Omnipod': 'materiel/pompe/omnipod.md'
-  - 'CGM': 'materiel/cgm.md'
-  - 'RileyLink': 'materiel/rileylink.md'
-  - 'Ordinateur': 'materiel/ordinateur.md'
-  - 'iPhone': 'materiel/iphone.md'
-  - 'Compte de Développeur': 'materiel/developpeur-apple.md'
 - Construire:
   - 'Aperçu': 'construire/apercu-construction.md'
-  - 'Préparation de l`ordinateur': 'construire/preparation-ordi.md'
-  - 'Configurer le compte de développeur': 'construire/compte-dev.md'
-  - 'Installer Xcode': 'construire/installer-xcode.md'
-  - 'Construire Loop': 'construire/construire-loop.md'
+  - 'Étape 1 - Ordinateur': 'construire/etape1.md'
+  - 'Étape 2 - iPhone ou iPod': 'construire/etape2.md'
+  - 'Étape 3 - Pompe': 'construire/etape3.md'
+  - 'Étape 4 - CGM': 'construire/etape4.md'
+  - 'Étape 5 - Commander le RileyLink': 'construire/etape5.md'
+  - 'Étape 6 - Inscription dans le programme de développement Apple': 'construire/etape6.md'
+  - 'Étape 7 - Installation de Homebrew': 'construire/etape7.md'
+  - 'Étape 8 - Téléchargement de Xcode': 'construire/etape8.md'
+  - 'Étape 9 - Préférences de Xcode': 'construire/etape9.md'
+  - 'Étape 10 - Tester ses réglages': 'construire/etape10.md'
+  - 'Étape 11 - Planifier ses données': 'construire/etape11.md'
+  - 'Étape 12 - Rencontrer la communauté': 'construire/etape12.md'
+  - 'Étape 13 - Télécharger le code de Loop': 'construire/etape13.md'
+  - 'Étape 14 - Construire Loop': 'construire/etape14.md'
   - 'Erreurs': 'construire/erreurs.md'
+  - 'Personnalisation du code': 'construire/personnalisation.md'
+  - 'Mettre à jour Loop': 'construire/maj-loop.md'
+- Mise en place:
+  - 'Aperçu': 'mise-en-place/apercu-mise-en-place.md'
 - Configuration de l'app:
   - 'Aperçu': 'configuration/apercu-configuration.md'
   - Ajouter une pompe:
