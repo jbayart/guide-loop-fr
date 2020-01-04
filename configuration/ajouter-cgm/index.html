@@ -135,7 +135,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuration de l'app <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -144,7 +144,7 @@
 </li>
                                     
   <li class="dropdown-submenu">
-    <a href="#">Ajouter une pompe</a>
+    <a href="#">Ajouter la pompe</a>
     <ul class="dropdown-menu">
             
 <li >
@@ -156,6 +156,10 @@
 </li>
     </ul>
   </li>
+                                    
+<li class="active">
+    <a href="./">Ajouter le CGM</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -175,6 +179,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../pompes/pompe-omnipod/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../utilisation/apercu-utilisation/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -184,12 +198,12 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#ajouter-le-cgm">Ajouter le CGM</a></li>
-            <li><a href="#dexcom-g5-and-g6">Dexcom G5 and G6</a></li>
+            <li><a href="#dexcom-g5-et-g6">Dexcom G5 et G6</a></li>
             <li><a href="#dexcom-g4">Dexcom G4</a></li>
             <li><a href="#dexcom-share">Dexcom Share</a></li>
-            <li><a href="#about-dexcom-share-credentials">About Dexcom Share credentials</a></li>
-            <li><a href="#spike-users">Spike Users</a></li>
-            <li><a href="#next-step-configuration">Next Step: Configuration</a></li>
+            <li><a href="#a-propos-des-identifiants-dexcom-share">À propos des identifiants Dexcom Share</a></li>
+            <li><a href="#utilisateurs-spike">Utilisateurs Spike</a></li>
+            <li><a href="#prochaine-etape-parametrisation">Prochaine étape : paramétrisation</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -211,22 +225,23 @@
 <li>Dexcom Share</li>
 </ul>
 <div class="admonition info">
-<p>Si vous avez ajouté une pompe Medtronic compatible lus tôt dans le processus, alors vous allez aussi voir une option pour le capteur medtronic compatible qui fonctionne avec cette pompe. Si vous utilisez un capteur MDT compatible, séléctionnez cette option et les données CGM seront envoyées à Loop quand le statut de la pompe est mis à jour.</p>
+<p>Si vous avez ajouté une pompe Medtronic compatible plus tôt dans le processus, alors vous allez aussi voir une option pour le capteur medtronic compatible qui fonctionne avec cette pompe. Si vous utilisez un capteur MDT compatible, séléctionnez cette option et les données CGM seront envoyées à Loop quand le statut de la pompe est mis à jour.</p>
 </div>
-<h2 id="dexcom-g5-and-g6">Dexcom G5 and G6</h2>
-<p>The Dexcom G5 and G6 options only require the addition of the active transmitter ID, and the matching Dexcom app to be running on the Loop iPhone. You do not have to add your Dexcom Share account credentials, but if you do, make sure they match what you originally entered into your Dexcom app. </p>
-<p>When you change transmitters, you will need to select the <code>Delete CGM</code> button at the very bottom of the CGM info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it. </p>
-<p>If you don't update your transmitter ID when you change active transmitters, your Loop will be forced to go to your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.</p>
+<h2 id="dexcom-g5-et-g6">Dexcom G5 et G6</h2>
+<p>Les options pour le Dexcom G5 et G6 demandent seulement l'ajout de l'ID du transmetteur actif, et l'app Dexcom correspondante qui tourne en parallèle de Loop. Vous n'avez pas à ajouter vos identifiants Dexcom Share, mais si vous le faites, assurez-vous de les faire correspondre avec ceux entrés dans votre app Dexcom.</p>
+<p>Quand vous allez changer de transmetteurs, vous devrez sélectionner le bouton <code>Supprimer CGM</code> tout en bas de la page d'info du CGM dans Loop. Ensuite, vous sélectionnerez le système Dexcom une nouvelle fois et vous ajouterez le nouvel ID du transmetteur. Appuyez sur l'ID de l'ancien transmetteur pour le mettre à jour ne fonctionnera pas.</p>
+<p>Si vous ne mettez pas à jour l'ID du transmetteur quand vous changez de transmetteur actif, votre Loop sera obligé d'aller chercher les données CGM sur les serveurs Dexcom Share. Un petit nuage apparaîtra alors au-dessus de la mesure de glycémie dans Loop et cela devrait vous prévenir que vous avez peut être oublié de mettre à jour votre ID de transmetteur.</p>
 <h2 id="dexcom-g4">Dexcom G4</h2>
-<p>Dexcom G4 users will need the Dexcom G4 Share2 app active on their iPhone and paired to their Dexcom G4 Share receiver.</p>
+<p>Les utilisateurs Dexcom G4 auront besoin d'avoir l'app Dexcom G4 Share2 active sur leur iPhone et appairée à leur récépteur Dexcom G4 Share.</p>
 <h2 id="dexcom-share">Dexcom Share</h2>
-<p>The Dexcom Share selection is primarily for people who wish to test Loop function without a local CGM source and who are not running the Dexcom app on their Loop iPhone. This selection will require login access to a Dexcom Share account with live data and active internet connection in order to work.</p>
-<h2 id="about-dexcom-share-credentials">About Dexcom Share credentials</h2>
-<p>For all selections, the Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. <strong>Dexcom Share account is not always the same login info as your Dexcom Clarity account.</strong> For G4 users, the Share account is found in the account tab on the app. For G5/G6 users, unfortunately, there is no information in the app displaying what your account name is. The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.</p>
-<h2 id="spike-users">Spike Users</h2>
-<p>Users who are using Spike app to access other CGM types (or to avoid using the Dexcom app), you will need to follow the directions contained within the Spike app in order to build/modify Loop with Spike. Loop does not natively support Spike app and does not currently plan to. You are responsible for modifying or adapting Loop in order to use Spike so that it is an available option as a CGM source.</p>
-<h2 id="next-step-configuration">Next Step: Configuration</h2>
-<p>Now that you have added your CGM source, we need to complete the configuration and settings in your Loop. Please head over to the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/configurations/">Configuration page</a> for guidance with this important part of Loop's setup.</p></div>
+<p>La sélection Dexcom Share est essentiellement faite pour les gens qui souhaite tester Loop sans une source CGM locale et qui ne font pas tourner une app Dexcom sur leur iPhone. Cette sélection nécessite une connexion à un compte Dexcom Share avec des données en direct et une connection internet fonctionnelle.</p>
+<h2 id="a-propos-des-identifiants-dexcom-share">À propos des identifiants Dexcom Share</h2>
+<p>Pour toutes les sélections, les identifiants Dexcom Share sont les mêmes que vous utilisez pour vous connectez à l'app active Dexcom de votre iPhone. <strong>Le compte Dexcom Share n'a pas toujours les mêmes identifiants que votre compte Dexcom Clarity.</strong> Pour les utilisateurs G4, le compte Share se trouve dans l'onglet compte dans l'app. Pour les utilisateurs G5/G6, malheureusement, il n'y a aucune information dans l'app qui affiche le nom de votre compte. L'information est rentré quand vous vous connectez pour la première fois à l'app et n'est jamais affiché à nouveau, ni visible dans aucun écran d'information. Si vous avez oublié vos identifiants de compte G5/G6, vous pouvez supprimer l'app Dexcom et la retélécharger pour essayer de vous reconnecter. Cela ne va pas provoquer un redémarrage d'une quelconque session de capteur en cours.</p>
+<h2 id="utilisateurs-spike">Utilisateurs Spike</h2>
+<p>Pour les utilisateurs utilisant l'app Spike pour accéder à d'autres types de CGM (ou pour éviter d'utiliser l'app Dexcom), vous pourrez trouver les instructions à suivre dans <a href="https://docs.google.com/document/d/1S0cxQiFra4RNIFt7R1WtLMpBT64vKRgAunT4Qc5g23I/edit">ce document</a> (en anglais). En résumé, il suffit simplement de télécharger la version modifiée de Loop de Cal Young disponible sur <a href="https://github.com/cyoung1024/Loop">ce github</a> et de choisir une des branches Spike disponibles au lieu du github officiel. La procédure ensuite est la même qu'une installation classique. Pour plus d'information sur Spike et Loop, vous pouvez consulter le <a href="https://cyoung1024.github.io/spike-guide/">wiki Loop + Spike</a>.</p>
+<p>A noter que l'intégration Spike n'est pas disponible par défaut pour une bonne raison : utiliser Spike avec Loop comporte des risques et peut être dangereux si on ne procède pas à un étalonnage rigoureux de Spike. Vous êtes invité à lire avec attention le <a href="https://docs.google.com/document/d/1gy_ayh5WrtePUQs3YaLFOch3iLL6jI7yEIb_e8jyLS8/edit">document suivant</a> si vous souhaitez utiliser Spike comme source CGM.</p>
+<h2 id="prochaine-etape-parametrisation">Prochaine étape : paramétrisation</h2>
+<p>Maintenant que vous avez ajouté votre source CGM, vous allez devoir paramétrer Loop. Veuillez vous diriger vers la <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/configurations/">page de paramétrisation</a> pour de l'aide sur cette partie importante de la mise en place de Loop.</p></div>
         </div>
 
         <footer class="col-md-12">
