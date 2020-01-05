@@ -167,7 +167,7 @@ Solution : cette message est probablement dû au fait d’involontairement cliqu
 
 Message d’erreur : **"The Apple Developer Program License Agreement has been updated, In order to access certain membership resources, you must accept the latest license agreement."**
 
-Solution : veuillez (accèderez à votre compte de développeur)[ https://developer.apple.com/account/] et accepter à nouveau les conditions.
+Solution : veuillez [accédez à votre compte de développeur](https://developer.apple.com/account/) et accepter à nouveau les conditions.
 
 ![license](img/license.png)
 

@@ -22,7 +22,13 @@ nav:
   - 'Erreurs': 'construire/erreurs.md'
   - 'Personnalisation du code': 'construire/personnalisation.md'
   - 'Mettre à jour Loop': 'construire/maj-loop.md'
-- Mise en place:
-  - 'Aperçu': 'mise-en-place/apercu-mise-en-place.md'
+- Configuration de l'app:
+  - 'Aperçu': 'configuration/apercu-configuration.md'
+  - Ajouter la pompe:
+    - "Medtronic": 'configuration/pompes/pompe-medtronic.md'
+    - "Omnipod": 'configuration/pompes/pompe-omnipod.md'
+  - 'Ajouter le CGM' : 'configuration/ajouter-cgm.md'
 - Utilisation:
   - 'Aperçu': 'utilisation/apercu-utilisation.md'
+markdown_extensions:
+  - admonition
