@@ -1,4 +1,21 @@
 # Ordinateur Apple
+
+!!! note "Temps estimé"
+    * 5 minutes, si vous avez déjà Mojave ou Catalina comme macOS
+    * 30 - 60 minutes, si vous devez mettre à jour votre ordinateur
+
+!!! warning "Sommaire"
+    * Vérifiez votre macOS pour confirmer qu'il est Mojave ou Catalina.
+    * N'utilisez pas des versions beta de macOS (si vous ne savez pas ce que cela veut dire... c'est que vous n'en utilisez pas !)
+    * Si vous ne pouvez pas mettre à jour votre ordinateur pour avoir Mojave ou Catalina, il faudra emprunter un Mac, un outil dit "patcher", ou peut-être invester dans un ordinateur compatible avec Mojave.
+    * Regardez dans `mise à jour de logiciels` pour voir si votre ordinateur a une mise à jour disponible.
+
+!!! danger "FAQ"
+    * **"Puis-je utiliser un ordinateur Windows ? Je n'ai pas de Mac."** Oui... plus ou moins. Veuillez lire [cette page sur les VirtualMachine](https://cyoung1024.github.io/guide-loop-fr/faq/questions-generales/#puis-je-utiliser-une-virtualmachine-pour-monter-loop). Les ordinateurs Windows avec un processeur AMD ne pourront pas être utilisé pour faire une machine virtuelle, donc s'il vous plaît vérifiez la marque de votre processeur avant de procéder.
+    * **"Qu'est-ce que je fais si mon Mac est trop ancien pour installer Mojave ?"** Vous pouvez tenter [Mojave Patcher](http://dosdude1.com/mojave/), mais cela n'est pas supporté par l'équipe est vous le ferez tout(e) seul(e). Veuillez lire la page attentivement pour bien peser les risques avant de procéder.
+    * **"Puis-je emprunter l'ordinateur de quelqu'un d'autre ?"** Oui. Veuillez lire [cette page à ce sujet](https://cyoung1024.github.io/guide-loop-fr/faq/questions-generales/#dois-je-acheter-mon-propre-ordinateur-apple).
+    * **"Combien de fois dois-je utiliser l'ordinateur pour Loop ?"** Vous devez avoir accès à l'ordinateur seulement pour installer Loop pour la première fois, ou pour le mettre à jour. Vous N'AVEZ PAS BESOIN d'un ordinateur pour changer vos reglages de Loop, comme les débits de basale ou ratios de glucides.
+
 Apple met à jour régulièrement la version du logiciel de l’iPhone (iOS), de l’ordinateur (macOS), et l’application Xcode. Les développeurs de Loop travaillent diligemment de mettre à jour Loop au fur et à mesure que Apple mettre à jour leurs produits.
 
 *Ne pas installer les bêtas de Xcode, iOS, ou macOS sur les périphériques avec lesquels vous utilisez Loop.*

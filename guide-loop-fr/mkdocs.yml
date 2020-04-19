@@ -32,3 +32,4 @@ nav:
   - 'Aperçu': 'utilisation/apercu-utilisation.md'
 markdown_extensions:
   - admonition
+theme: cinder

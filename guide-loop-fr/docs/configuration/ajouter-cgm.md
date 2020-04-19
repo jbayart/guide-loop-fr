@@ -1,5 +1,7 @@
 # Ajouter le CGM
 
+
+
 Maintenant, nous devons ajouter une source CGM pour que Loop récupère les données de glycémie. Depuis l'écran des réglages de Loop, séléctionnez `Ajouter CGM`.
 
 <p align="center">
