@@ -1,4 +1,10 @@
 #  Pompe insuline Medtronic
+!!! note "Temps estimé"
+
+!!! warning "Résumé"
+
+!!! danger "FAQ"
+
 ![medtronic](img/medtronic.png)
 
 Il y a un certain nombre de pompes Medtronic fabriquées entre 2006 - 2012 qui sont compatible avec Loop. La compatibilité a deux conditions : (1) le modèle de la pompe et (2) le firmware.

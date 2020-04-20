@@ -1,4 +1,10 @@
 # Préparer votre ordinateur Apple
+!!! note "Temps estimé"
+
+!!! warning "Résumé"
+
+!!! danger "FAQ"
+
 N’importe quel ordinateur Apple fonctionnera à partir du moment où :
 
 * Il a la version macOS compatible

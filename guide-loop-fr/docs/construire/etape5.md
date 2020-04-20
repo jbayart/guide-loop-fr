@@ -1,4 +1,10 @@
 #  RileyLink
+!!! note "Temps estimé"
+
+!!! warning "Résumé"
+
+!!! danger "FAQ"
+
 Le RileyLink (RL) est un périphérique *open-source* qui facilite la communication entre *Bluetooth Low Energy* (BLE) et 916MHz ou 433MHz communication sans fil. Qu'est-ce que cela veut dire pour vous ? Que le RileyLink est la passerelle entre votre pompe insuline, CGM, et iPhone.
 
 ![rl](img/rl_diag.png)

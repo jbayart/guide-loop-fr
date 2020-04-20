@@ -1,4 +1,10 @@
 # Moniteur de glycémie en continu
+!!! note "Temps estimé"
+
+!!! warning "Résumé"
+
+!!! danger "FAQ"
+
 Un moniteur de glycémie en continu (ou CGM, d’anglais “continuous glucose monitor”) fournit à Loop les données du taux de glucose. Ces données permet Loop de calculer la tendance des taux et donc prévoir la glycémie future à base de celle-ci ainsi que les glucides mangés et vos réglages de Loop. Vous trouverez ci-dessous les marques de CGM compatibles avec Loop. Les données du CGM sont obligatoires pour utiliser Loop. Si Loop est incapable de trouver ces données, il peut pas fonctionner en tant que boucle ni ouverte, ni fermée.
 
 ## Dexcom G5 et G6

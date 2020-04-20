@@ -4,7 +4,7 @@
     * 5 minutes, si vous avez déjà Mojave ou Catalina comme macOS
     * 30 - 60 minutes, si vous devez mettre à jour votre ordinateur
 
-!!! warning "Sommaire"
+!!! warning "Résumé"
     * Vérifiez votre macOS pour confirmer qu'il est Mojave ou Catalina.
     * N'utilisez pas des versions beta de macOS (si vous ne savez pas ce que cela veut dire... c'est que vous n'en utilisez pas !)
     * Si vous ne pouvez pas mettre à jour votre ordinateur pour avoir Mojave ou Catalina, il faudra emprunter un Mac, un outil dit "patcher", ou peut-être invester dans un ordinateur compatible avec Mojave.

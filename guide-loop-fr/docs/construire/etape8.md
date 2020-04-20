@@ -1,4 +1,10 @@
 # Installer Xcode
+!!! note "Temps estimé"
+
+!!! warning "Résumé"
+
+!!! danger "FAQ"
+
 On y est presque ! Cette étape est simplement pour installer un logiciel gratuit qui s’appelle Xcode.
 
 >

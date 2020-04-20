@@ -1,4 +1,10 @@
 # Le compte de développeur Apple
+!!! note "Temps estimé"
+
+!!! warning "Résumé"
+
+!!! danger "FAQ"
+
 Le [programme de développement d'Apple](https://developer.apple.com/programs/how-it-works/) est le système d'Apple qui fournit les [outils et ressources](https://developer.apple.com/programs/whats-included/) requis pour monter, partager, et utiliser les applications pour les produits Apple. Les membres du programme de développeur Apple peuvent essayer des applications sur leurs propres appareils avant de les soumettre à l'App Store pour distribution et vente. Les développeurs reçoivent aussi l'accès des versions beta des "*OS*" (d'anglais "operating systems, ou *logiciels*). Cependant, veuillez ne pas utiliser les versions beta si vous utilisez Loop. Elles ne seront pas compatibles avec Loop.
 
 L'application Loop n'est pas disponible pour téléchargement sur l'App Store. Il faut le monter et installer soi-même, individuellement. Cela veut dire que les utilisateurs de Loop doivent s'inscrire comme un individu, *et non pas comme une organisation*, dans le programme de développeur d'Apple, afin de pouvoir installer Loop sur l'iPhone. Il existe deux types d'inscription : gratuit et payant. Il vous faut un Apple ID pour vous inscrire.
