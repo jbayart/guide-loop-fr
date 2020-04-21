@@ -23,7 +23,9 @@ Loop n'est qu'une calculatrice sophistiquée. Les problèmes mathématiques qu'e
 **Les ratios glucides** sont la quantité de glucides couverte par une unité d'insuline. Idéalement, un bon ratio de glucides ramènera votre glycémie au point de départ dans les 2 à 3 heures suivant le repas (sachant que les repas riches en matières grasses / protéine peuvent avoir un impact plus long sur votre glycémie). Si vous avez un pic plus élevé que vous ne le souhaiteriez après un repas, mais que vous revenez quand même au point de départ, envisagez un pre-bolus de 15 à 20 minutes plutôt que de changer le ratio de glucides. 
 
 Consultez [le site de LoopTips](https://looptips.org/) pour savoir [comment vérifier tous ces paramètres](https://kdisimone.github.io/looptips/settings/settings/) et [pourquoi ils sont si importants](https://kdisimone.github.io/looptips/settings/overview/). Si ce sujet vous fascine, lisez le livre [Thinks Like A Pancreas](https://www.amazon.fr/Think-Like-Pancreas-Practical-Insulin-Completely/dp/0738215147) pour une discussion intéressante. Enfin, n'oubliez pas que les paramètres peuvent changer périodiquement. Les cycles hormonaux, les stéroïdes, les maladies, etc. peuvent nécessiter un changement de ratios et / ou débits. 
- 
+
+### Prochaine étape : [Planifier vos données](https://cyoung1024.github.io/guide-loop-fr/etape11)
+
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step10/#step-10-test-settings) 
  
  

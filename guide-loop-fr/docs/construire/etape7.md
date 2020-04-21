@@ -1,35 +1,22 @@
-# Préparer votre ordinateur Apple
+# Installer Homebrew
+
 !!! note "Temps estimé"
+    * 10 à 15 minutes si vous connaissez le mot de passe de votre ordinateur
+    * 35 minutes sinon, ou si vous avez besoin de deviner / chercher 
 
 !!! warning "Résumé"
+    * Installez Homebrew en copiant et collant tout simplement une longue ligne de code dans la fenêtre Terminal 
 
 !!! danger "FAQ"
+    * **"Que faire si je n’obtiens pas le message “installation successful” (installation réussie) ?"** Si vous n’obtenez pas le message installation réussie, recommencez le copier/coller la ligne de code dans la fenêtre Terminal attentivement.  Et si vous ne parvenez toujours pas à installer Homebrew, la construction de Loop échouera aussi. Vous ne pouvez donc pas simplement vous affranchir de cette étape. Notez que la cause d’erreurs la plus fréquente est le fait de ne pas copier la totalité de la ligne de code, et notamment le `“` final. Par ailleurs, cela demande d’utiliser un compte utilisateur possédant les droits d’admin puisque le processus installe un programme sur l’ordinateur cible. 
 
-N’importe quel ordinateur Apple fonctionnera à partir du moment où :
+Homebrew est un logiciel qui nous permet d’installer les packages nécessaires pour monter Loop. Avant d'installer Homebrew, nous devons vérifier une chose... que le compte sur l'ordinateur que vous utilisez pour construire Loop ait les droits d'administrateur sur l'ordinateur. Comment pouvez-vous le savoir ? Allez dans les préférences système de votre ordinateur, ouvrez la section Utilisateurs et groupes. Si le compte que vous utilisez ne porte pas la mention "Admin" sous votre nom, vous devez cliquer sur le cadenas et le remplacer par un compte Admin avant de continuer. Si vous utilisez un ordinateur professionnel, il se peut que vous n'ayez pas les droits d'administrateur sur cet ordinateur... sachez donc que vous pouvez avoir des restrictions sur les ordinateurs appartenant à votre société.
 
-* Il a la version macOS compatible
+![admin](img/admin.png)
 
-* Vous avez des droits d’administrateur pour pouvoir installer des nouveaux logiciels sur l’ordinateur
+Remarque : si vous êtes (1) un expert en informatique et (2) que vous avez déjà installé Homebrew sur un autre compte d'utilisateur sur l'ordinateur, veuillez utiliser ce compte sur l'ordinateur pour construire Loop. Ou bien, supprimez Homebrew de ce compte d'utilisateur et installez-le sur votre compte. Homebrew est un peu particulier comme ça.
 
-* Vous êtes connecté(e) à l’Internet
-
-## Vérifier macOS
-Vous devez utiliser macOS 10.14.3 (Mojave) au minimum si :
-
-* Vous souhaitez utiliser une branche Omnipod ou Loop-dev
-
-* Votre iPhone ou iPod Touch a iOS 12.2 (ou plus récent)
-
-Vous pouvez utiliser macOS 10.13.6 High Sierra si vous montez la branch Loop-master et avez iOS 12 ou 12.1. La version de Loop d’après requiert Mojave, donc gardez cela en tête en planifiant votre aventure Loop.
-
-Vérifiez votre macOS en cliquant sur le logo Apple en haut à gauche de votre écran et sélectionnez `À propos de ce Mac`.
-
-![macos](img/macos.png)
-
-Si votre macOS n’a pas la version minimum, cliquez sur `Mise à jour de logiciels...` et procéder avec ceci. Si votre ordinateur et plus ancien que fin 2009 / 2010 (selon le modèle), il se peut que vous pouvez pas faire la mise à jour requise pour avoir Mojave et utiliser la version Xcode nécessaire. Vous pouvez vérifiez la compatibilité des macOS [ici](https://www.apple.com/macos/how-to-upgrade/#hardware-requirements).
-
-## Installer Homebrew
-Homebrew est un logiciel qui nous permet d’installer les packages nécessaires pour monter Loop. Ouvrez l’application Terminal sur votre ordinateur. Vous pouvez la trouver dans le fichier Applications. Ensuite, regardez dans le fichier Utilitaires pour trouver Terminal.
+Bon, maintenant que le compte d'utilisateur est confirmé, ouvrons l'application Terminal sur votre ordinateur. Elle se trouve dans votre dossier Applications. Regardez dans le sous-dossier Utilitaires... l'application Terminal s'y trouve comme le montre la capture d'écran ci-dessous.
 
 ![terminal](img/terminal.png)
 
@@ -47,7 +34,14 @@ Attendez pendant que Terminal fait son boulot. Vous allez voir des informations 
 
 Vous pouvez fermer l’application Terminal maintenant. On a terminé avec. Vous ne devez pas refaire ce processus dans l’avenir. 
 
-### Prochaine étape : [Configuration du compte de développeur](https://cyoung1024.github.io/guide-loop-fr/construire/compte-dev/)
+## Désinstaller Homebrew
+Si vous rencontrez un problème avec l'installation de Homebrew et que vous voulez le supprimer pour recommencer, la commande de désinstallation est :
+
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"`
+
+Copiez et collez toute cette ligne dans l'application Terminal. Ensuite, vous pouvez réessayer l'installation de Homebrew en utilisant la commande d'installation metionnée plus haut dans cette page.
+
+### Prochaine étape : [Installer Xcode](https://cyoung1024.github.io/guide-loop-fr/etape8)
 
 ### [Cliquez ici pour voir la page d’origine](https://loopkit.github.io/loopdocs/build/step7/)
 

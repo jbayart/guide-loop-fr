@@ -5,12 +5,12 @@
     * Environ 10 à 15 minutes pour installer les Command Line Tools 
     * 5 minutes pour ajouter votre Apple ID, pourvu que vous vous souveniez de votre mot de passe 
  
- 
 !!! warning "Résumé" 
- 
+    * Ouvez les préférences Xcode et ajouter votre identifiant Apple dans l'onglet `Accounts`.
+    * Vérifiez que l'outil de lignes de command (appelé "Command Line Tools" dans Xcode) a été correctement installé dans les préférences Xcode, dans l'onglet `Locations`
  
 !!! danger "FAQ" 
- 
+    * **"Je ne vois toujours qu'un compte avec `(Personnal team)` à côté, même si je me suis inscrit au à compte de développeur payant... que dois-je faire ?”** Vous devriez vérifier votre boîte électronique au cas où Apple vous y aurait envoyé un email. Assurez-vous que vous avez bien attendu le delais maximal d’approbation de 48 heures. Si cela fait 48 heures et que vous ne voyez toujours rien dans votre e-mail, contactez le support d'Apple et demandez-lui où en est votre inscription. Il se peut que votre inscription soit bloquée par un problème de leur côté.
  
 Maintenant que vous vous êtes inscrit dans le programme de développeur Apple de l'étape 6 et que vous avez intallé Xcode dans l'étape 8, on doit entrer votre compte développeur dans Xcode. 
 
@@ -31,5 +31,7 @@ Si vous souhaitez utiliser un compte développeur gratuit, il vous suffit d'entr
 ![apple_id](img/apple_id.png) 
   
 Vous avez maintenant terminé la confiuration de Xcode. Vous n'aurez pas besoin de refaire les étapes de configuration du compte lors des prochaines versions ou mises à jour de votre application Loop. Xcode se souviendra de ces paramètres. 
+
+### Prochaine étape : [Tester vos réglages](https://cyoung1024.github.io/guide-loop-fr/etape10)
 
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step9/) 

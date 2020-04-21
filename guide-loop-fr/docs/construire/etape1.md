@@ -63,5 +63,7 @@ Si votre ordinateur a une version ancienne de macOS, vous pouvez voir si une mis
 | iMac pro | 2017 |
 | Mac Pro | fin 2013 ; mi-2010 et mi-2012 avec les cartes graphiques recommandées (Metal-capable) |
 
+
+### Prochaine étape : [iPhone ou iPod Touch](https://cyoung1024.github.io/guide-loop-fr/etape2)
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/setup/requirements/computer/)
 

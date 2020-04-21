@@ -29,6 +29,8 @@ Examinons donc les options qui s'offrent à vous pour les données de Loop. Il e
 
 Toutes les options sont gratuites et faciles à configurer. Prenez le temps de vous familiariser avec ces options et de configurer le(s) système(s) que vous préférez. 
 
+### Prochaine étape : [Rencontrer la communauté](https://cyoung1024.github.io/guide-loop-fr/etape12)
+
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step11/) 
  
  

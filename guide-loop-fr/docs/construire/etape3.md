@@ -1,9 +1,21 @@
-#  Pompe insuline Medtronic
+#  Pompe insuline
 !!! note "Temps estimé"
+    * Utilisateurs Omnipod : 3 secondes pour se rappeler quel PDM vous utilisez
+    * Utilisateurs Medtronic : 10 minutes pour mettre une batterie dans votre pompe er vérifier le modèle et son firmware
+    * Utilisateurs d'autres pompes : 5 jours pour envoyer un e-mail à vos amis leur demandant de vérifier s’ils n’ont pas une de leur ancienne pompe Medtronic dans leurs placards, ou appeler votre diabétologue et prestataire pour obtenir une autorisation préalable pour l'Omnipod
 
 !!! warning "Résumé"
+    * Si vous avez un PDM encombrant avec lecteur de glycémie intégré... Vous pouvez utiliser vos pods avec Loop 
+    * Si vous avez un PDM fin à écran tactile (Omnipod Dash)... vous ne pouvez PAS utiliser vos pods avec Loop 
+    * Si vous avez une pompe Medtronic, vérifiez la liste pour vous assurer que le modèle et le firmware sont compatibles 
 
 !!! danger "FAQ"
+    * **"Comment trouver une pompe Medtronic compatible ?"** Vous trouverez la réponse à cette question dans la section "Trouver une pompe Medtronic" ci-dessous.
+    * **"Quelles sont les différences entre les modèles de pompes Medtronic ?"** La réponse à cette question se trouve dans la section "Les différences entre les pompes" ci-dessous.
+    * **"Mais qu'en est-il des autres types de pompes ?"** Non, dommage... A moins qu'il ne s'agisse d'une DanaRS, DanaR, Accu-Chek Insight, Accu-Chek Combo. Si vous avez une de ces pompes, vous avez la possibilité de consulter le système de boucle fermée AndroidAPS (add link) au lieu de Loop. Si vous avez une pompe Medtronic 512 ou 712, vous pouvez utiliser OpenAPS (add link) car ce système fonctionne avec les modèles 512 et 712 en plus des autres pompes Medtronic compatibles avec Loop. Aucun de ces systèmes ne prend actuellement en charge l'Omnipod en boucle fermée.
+    * **"Puis-je changer le firmware de ma pompe Medtronic ?"** Travaillez-vous chez Medtronic avec un accès privilégié à leurs outils secrets et aux différentes versions de firmware pour le faire ? Vous pourriez alors le faire mais vous perdriez votre emploi. Nous n'y avons pas accès.  
+
+# Pompe insuline Medtronic
 
 ![medtronic](img/medtronic.png)
 
@@ -163,5 +175,7 @@ Le system Eros utilise le PDM que nous connaissons tous.
 Insulet a annoncé le système DASH comme remplacement potentiel des pods Eros. Il y a déjà un petit groupe d’utilisateurs qui a reçu les DASH lors d’un lancement limité, avec un deuxième lancement plus accessible à la voie publique anticipé en 2019. Le système DASH utilise le nouveau PDM, qui est plus fin et possède son propre système Bluetooth avec le pod (contrairement aux signaux radios de nos jours). Loop ne sera pas compatible avec le système DASH.
 
 ![dash](img/dash.png)
+
+### Prochaine étape : [Moniteur de glycémie en continu](https://cyoung1024.github.io/guide-loop-fr/etape4)
 
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step3/)

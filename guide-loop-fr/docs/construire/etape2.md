@@ -49,4 +49,6 @@ Allez dans les réglages de votre iPhone, puis dans `général`, puis `informati
 
 ![iOS-version](img/ios-version.png)
 
+### Prochaine étape : [Pompe insuline](https://cyoung1024.github.io/guide-loop-fr/etape3)
+
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step2/)

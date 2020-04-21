@@ -1,9 +1,16 @@
 # Moniteur de glycémie en continu
 !!! note "Temps estimé"
+    * 10 minutes pour lire cette page
 
 !!! warning "Résumé"
+    * Si vous utilisez un système Dexcom G4 Share, G5 ou G6 : vous pouvez utiliser Loop
+    * Si vous utilisez un capteur Medtronic compatible avec une pompe Medtronic compatible : vous pouvez utiliser Loop
+    * Si vous utilisez un Eversense: vous ne pouvez pas utiliser Loop avec ce CGM
+    * Si vous utilisez un Libre : vous devrez chercher une version de Loop modifiée
 
 !!! danger "FAQ"
+    * **"Et les capteurs Libres ?"** Les capteurs Libre ne sont pas conçus pour être des moniteurs de glycémie en continu. Toute utilisation de capteurs Libre comme CGM implique l'utilisation des applications tierces (xDrip ou Spike) et des dispositifs Bluetooth (BluCon ou Miaomiao). Les développeurs de Loop n'ont pas vu de données démontrant que ces lecteurs et applications offrent des garanties suffisantes pour permettre l'intégration dans Loop. Si vous utilisez un capteur Libre, vous devrez utiliser une branche à part de Loop fait par quelqu'un (ou par vous-même) qui permet l'utilisation de ces capteurs / applications.
+    * **"Et Eversence ?"** L'application d'Eversense ne s'intègre pas à Santé, et les protocoles de communication d'Eversense n'ont pas fait l'objet d'une ingénierie inverse. Par conséquent, Eversense n'est actuellement pas compatible avec Loop.
 
 Un moniteur de glycémie en continu (ou CGM, d’anglais “continuous glucose monitor”) fournit à Loop les données du taux de glucose. Ces données permet Loop de calculer la tendance des taux et donc prévoir la glycémie future à base de celle-ci ainsi que les glucides mangés et vos réglages de Loop. Vous trouverez ci-dessous les marques de CGM compatibles avec Loop. Les données du CGM sont obligatoires pour utiliser Loop. Si Loop est incapable de trouver ces données, il peut pas fonctionner en tant que boucle ni ouverte, ni fermée.
 
@@ -24,5 +31,7 @@ Dans les cas rares, il se peut que Loop n’arrive pas à “entendre” les tra
 
 ## Autres CGM non compatible nativement avec Loop
 Freestyle Libre (BluCon et Miaomiao), Eversense, Medtronic Guardian... voici quelques exemples de CGM qui ne fonctionnent pas nativement avec Loop. Si vous souhaitez utiliser l’un de ces CGM comme source des données, vous devez aller chercher les parties tierces qui font l’intégration entre le CGM et Loop. Ces guides ne montrent pas les méthodes alternatives des systèmes CGM non compatibles ou des applications comme Spike.
+
+### Prochaine étape : [RileyLink](https://cyoung1024.github.io/guide-loop-fr/etape5)
 
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step4/)

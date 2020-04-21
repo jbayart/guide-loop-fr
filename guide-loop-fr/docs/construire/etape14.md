@@ -1,29 +1,26 @@
 # Construire Loop
-Maintenant que votre système est mis en place, on peut commencer à monter l’application Loop.
+!!! note "Temps estimé"
+    * 60 à 80 minutes si c'est la première fois que vous construisez votre application
+    * 10 à 15 minutes si vous l'avez déjà constuit au moins une fois
 
-## Télécharger le code de Loop
-Vous devez télécharger le code de Loop pour pouvoir le monter dans votre ordinateur. Cliquez sur l’**un** de ces liens ci-dessous pour télécharger votre code de Loop. Veuillez lire attentivement les notices en dessous des liens avant de procéder.
+!!! warning "Résumé"
+    * Ouvrez le code Loop que vous avez téléchargé à [l'étape 13](https://cyoung1024.github.io/guide-loop-fr/etape13)
+    * Branchez votre téléphone sur l'ordinateur
+    * Allez dans vos règlages de l'iPhone, et sous le menu `Luminosité et affichage` sélectionnez `jamais` sous l'option de Verrouillage automatique
+    * Faites confiance à l'ordinateur si votre iPhone le demande
+    * Sélectionnez votre iPhone dans la liste des appareils dans Xcode
+    * Enregistrer l'appareil
+    * Signez les 4 targets
+    * Appuyez sur le bouton "play"
+    * Entrez le mot de passe de votre ordinateur quatre fois pendant la construction (s'il s'agit de votre premi!re construciton)
+    * Regardez avec émerveillement que vous venez de créer votre propre application Loop
 
-[Loop : branche master](https://github.com/LoopKit/Loop/archive/master.zip)
-
-[Loop : branche dev](https://github.com/LoopKit/Loop/archive/dev.zip)
-
->
-> Master versus dev : laquelle choisir ?
-> Quelle est la différence ? Le code de Loop est hebergé sur un site web qui s’appelle [GitHub](https://github.com). Tout projet sur GitHub utilise des dépôts. Un dépôt est comme une bibliothèque d’un projet, contenant des dossiers et archives des versions (ici appelé *branche*) du projet. La branche master est considérée comme une branche stable, une version stable, du projet. Des nouvelles fonctionnalités ou options que vous pouvez entendre parler de sont d’abord examinées et mises en place dans une branche dev (de « développement »). Si vous entendez parler des « nouvelles fonctionnalités » en train d’être testées, ce sont des choses qui peuvent éventuellement être ajoutées dans la branche master, une fois les bogues éliminées. Si vous choisissez une branche testing comme dev, soyez prêt(e) à ce que des corrections soient fréquentes et mettez à jour votre application Loop dès qu’annoncé.
-> **Depuis le 31/12/2019, Omnipod est désormais intégré dans la branche master. Avant cette date, pour pouvoir utiliser Omnipod, on devait choisir la branche dev ou omnipod-testing. Il est fortement recommandé de changer pour la branche master si vous utilisez Omnipod. Cette branche est plus stable.** 
-> Gardez en tête que la branche dev aura plus de bogues ou des problèmes techniques. Au moment où vous les rencontrez, veuillez vérifier les guides tout d’abord pour voir si votre souci a déjà une solution. Si vous pensez que ce que vous voyez est vraiment étrange, signalez ce problème en créant [une « *New Issue* »  ici](https://github.com/loopkit/loop/issues) sur le GitHub de Loop. Vous pouvez aussi regardez dans la liste de problèmes techniques déjà signalés. Il est possible que d’autres personnes aient déjà rencontré votre problème aussi.
->
-
->
-> ATTENTION : il est hautement recommandé de laisser votre code Loop dans votre fichier de Téléchargements. Si vous gardez votre code Loop dans un fichier différent - comme Documents ou Bureau - veuillez vérifier que ce fichier **n’est pas accessible à iCloud Drive**. Placer votre code Loop dans un fichier sur iCloud Drive empêchera Loop de se construire avec succès. Comment savoir si un fichier est sur iCloud Drive ? Allez dans Préférences Système. Si vos préférences système s’affiche comme ci-dessus, vos fichiers Documents et Bureau sont sur iCloud Drive et **ne sont alors pas appropriés** pour l’emplacement de Loop.
-> ![icloud](img/icloud.png)
-> Selon les réglages de votre navigateur web, votre téléchargement Loop dézippera automatiquement, ou non. S’il ne dézippe pas tout seul, vous pouvez clic-droit et choisir « ouvrir avec » Utilitaire d'archive. CEPENDANT, si vous avez déjà un fichier `Loop-master` d’un téléchargement précédent, le nom du prochain fichier sera `Loop-master (1)`. Le problème c’est que ce nom contient un espace... et des espaces dans le nom du fichier entraîne des échecs de construction de Loop. Donc, soit vous supprimez les anciens fichiers de Loop avant de télécharger / dézipper votre nouveau code Loop, soit vous renommez le fichier pour vous assurez qu’il n’y a aucun espace dans le nom du fichier.
-> ![space](img/space.png)
->
+!!! danger "FAQ"
+    * **"J'ai une erreur de construction ! Qu'est-ce que je fais ?"** Consultez [la page Erreurs](https://cyoung1024/github.io/guide-loop-fr/erreurs) pour trouver toutes les solutions dont vous avez besoin.
+    * **"La construction semble prendre beaucoup de temps, est-ce normal ?"** Oui, la première construction d'un nouveau téléchargement prendra pas mal de temps. Soyez juste patient(e)... L'une des étapes de la construction prend beaucoup plus de temps que les autres. Le processus de construction se termine *toujours* par un message de réussite ou d'échec, alors attendez simplement de voir l'un de ces messages.
 
 ## Ouvrir Loop dans Xcode
-Allez dans votre fichier Téléchargements, ouvrir le fichier `Loop-master` (peu importe le nom que vous avez donné, mais vérifiez encore une fois qu’il n’y ait pas d’espaces dans le nom comme détaillé ci-dessus), et double-clic sur Loop.xcodeproj. Pour Omnipod Loop, le fichier s’appellerait `Loop-omnipod-testing`.
+Allez dans votre fichier Téléchargements, ouvrir le fichier `Loop-master` (peu importe le nom que vous avez donné, mais vérifiez encore une fois qu’il n’y ait pas d’espaces dans le nom comme détaillé ci-dessus), et double-clic sur Loop.xcodeproj.
 
 ![loop-proj-folder](img/loop-proj-folder.png)
 
@@ -33,7 +30,9 @@ Un avertissement pourrait s’afficher, vous demandant si vous voulez vraiment o
 
 Une fois qu'Xcode a fini d’indexer tous les fichiers et éléments, ils s’afficheront dans la colonne à gauche (si vous ne les voyez pas, cliquez sur l’icône à l’image d’un fichier bleu, en haut de cette colonne). Tout en haut, cliquez sur « Loop » en bleu, la première option sur la liste. Après, cliquez sur la boîte au milieu de l’écran pour faire afficher les cibles. Les quartes cibles, ou *targets*, que l’on signera sont désormais visibles.
 
-![targets](img/targets.png)
+![click1](img/click1.png)
+![click2](img/click2.png)
+![click3](img/click3.png)
 
 ## Brancher l’iPhone
 
@@ -65,7 +64,8 @@ Branchez votre iPhone via son câble pour le lier avec votre ordinateur. Sélect
 >
 > **Pour les utilisateurs du compte gratuit :**
 >
-> Si vous utilisez un compte de développeur gratuit pour "signez les targets", vous devez effectuer une personnalisation de votre code Loop avant de continuer. En tant qu'utilisateur du compte gratuit, vous ne pouvez pas monter des applications ayant les capacités Siri. Loop a des capacités Siri... Donc, vous devez les désactiver avant de procéder. Veuillez [cliquer ici pour trouver les instructions](https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities) pour désactiver Siri. Une fois ceci fait, revenez ici pour finir cette étape.
+> Si vous utilisez un compte de développeur gratuit pour "signez les targets", vous devez effectuer une personnalisation de votre code Loop avant de continuer. En tant qu'utilisateur du compte gratuit, vous ne pouvez pas monter des applications ayant les capacités Siri et des notifications à distance ("Push Notifications"). Loop a ces capacités... Donc, vous devez les désactiver avant de procéder.
+> ![free-acct-remove](img/free-acct-remove.png)
 >
 
 Après avoir sélectionné votre iPhone (le *nom* de votre iPhone et non pas le type d'iPhone), vous êtes prêt(e) à signer les targets. Commencez avec la *target* de Loop, le premier sur la liste des targets, affiché à gauche comme indiqué ci-dessous. Sous l'option "signing", sélectionnez le menu où est marqué jusqu'à présent "none". Choisissez la *team* que vous voulez utiliser. Si vous sélectionnez une *team* avec "(personal team)" indiqué, votre application expirera après 7 jours. Si vous sélectionnez une *team* sans "(personal team)", votre application expirera après un an. Si vous vous n'êtes jamais inscrit(e) pour un compte de développeur gratuit, vous n'allez pas avoir "(personal team)" affiché. Veuillez vérifier que vous sélectionnez "*automatically manage signing*" et que cette option demeure sélectionnée pour tout montage de votre application Loop.
@@ -153,6 +153,10 @@ Attention ! Pendant le tout premier montage sur un ordinateur, soyez prêt(e) po
 
 Quand vous voyez cette fenêtre vous devez taper le mot de passe de votre ordinateur puis cliquer sur "Always Allow". Ceci est normal, cette fenêtre va réapparaître 4 ou 5 fois de suite après chaque tentative. Par frustration, certains croire que la fenêtre est cassée comme elle réapparait et vont cliquer sur "Deny". Continuez à taper votre mot de passe et à cliquer sur "Always Allow", car Xcode va vous montrer cette fenêtre pour chaque *target*. Après 4 ou 5 fois, le montage procédera.
 
+> **Vous êtes impatient(e) ?**
+>  Si vous ne pouvez tout simplement pas supporter l'incertitude de na pas voir que les choses progressent, vous pouvez jeter un coup d'oeil "sous le capot" et observer les différentes étapes de construction en cliquant sur l'icône du navigateur de rapport et ensuite sur la ligne de construction en haut de la liste. En attendant, vous pouvez regarder la liste des "schemes" en cours de construction.
+> ![build-scheme](img/build-scheme.png)
+
 
 
 ## En attendant...
@@ -226,7 +230,7 @@ Si vous voyez un message disant "*Build failed*", vous allez probablement voir u
 >
 
 
-### Prochaine étape : [erreurs](https://cyoung1024.github.io/guide-loop-fr/construire/construire-loop/)
+### Prochaine étape : [erreurs](https://cyoung1024.github.io/guide-loop-fr/construire/erreurs)
 
 
 

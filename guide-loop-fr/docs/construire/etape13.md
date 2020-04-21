@@ -30,4 +30,6 @@ La meilleure pratique consiste à laisser votre code de Loop dans votre dossier 
  
 En fonction de votre navigateur et de vos paramètres, votre téléchargement Loop peut ou non se décompresser automatiquement. S'il ne se décompresse pas automatiquement, vous pouvez cliquer avec le bouton droit de la souris sur le fichier zip et choisir "Ouvrir avec..." l'utilitaire d'archivage. Cela créera un dossier bleu appelé `Loop-master`. CEPENDANT, si vous avez déjà un dossier Loop-master existant d'un téléchargement précédent, le nom du prochain téléchargement sera quelque chose comme `Loop-master (1)`.  
  
+### Prochaine étape : [Construire Loop](https://cyoung1024.github.io/guide-loop-fr/etape14)
+
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step13/) 

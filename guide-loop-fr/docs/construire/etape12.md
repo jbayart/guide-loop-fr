@@ -52,4 +52,6 @@ La réponse à votre demande d'aide sera souvent accompagnée d'un lien. Ne vous
  
 Si vous avez déjà fait des recherches dans les documents et lu les informations, veuillez en tenir compte dans votre publication. De cette façon, vous ne serez par renvoyé à la partie des docs sur laquelle vous êtes déjà confus. De plus, il est très utile de nous faire savoir quand ces documents peuvent être améliorés. 
  
+### Prochaine étape : [Télécharger le code de Loop](https://cyoung1024.github.io/guide-loop-fr/etape13)
+
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step12/) 

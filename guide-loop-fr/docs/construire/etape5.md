@@ -1,9 +1,23 @@
 #  RileyLink
 !!! note "Temps estimé"
+    * 15 minutes pour commander un RileyLink
+    * 15 à 20 minutes pour assembler le RileyLink
+    * 15 à 20 minutes pour lire cette page
 
 !!! warning "Résumé"
+    * Commander votre [RileyLink pour Omnipod](https://getrileylink.org/product/rileylink433) ou votre [RileyLink pour Medtronic](https://getrileylink.org/product/rileylink916)
+    * Assembler votre RileyLink, après avoir embrassé le facteur
+    * Lire les informations supplémentaires pour en savoir plus sur les voyants du RileyLink, la charge, etc.
 
 !!! danger "FAQ"
+    * **"Ai-je besoin d'un RileyLink ?"** Oui, la boucle fermée ne fonctionnera pas sans RileyLink. Les utilisateurs de l’Omnipod ne pourront pas faire de bolus depuis leur application Loop sans RileyLink. 
+    * **"Que se passe-t-il si je perds mon RileyLink ou si je m'en éloigne ?"** Bonne question... à laquelle on répond [ici](https://loopkit.github.io/loopdocs/faqs/rileylink-faqs/#what-happens-if-i-walk-away-from-my-rileylink).
+    * **"Puis-je utiliser un Omnipod RileyLink avec une pompe Medtronic ou inversement?"** Bonne question... à laquelle on répond [ici](https://loopkit.github.io/loopdocs/faqs/rileylink-faqs/#what-will-happen-if-you-use-a-916mhz-antenna-rileylink-with-an-omnipod-or-vice-versa).
+    * **"Puis-je changer entre deux RileyLinks à tout moment?"** Oui, vous pouvez. RileyLinks peut être remplacé très simplement sans avoir besoin de démarrer un nouveau pod ou de reconstruire l'application Loop. Vous trouverez dans les paramètres de Loop le nom de votre nouveau RileyLink. Il suffira d’activer la connexion Bluetooth à celui-ci pour commencer à l'utiliser.
+    * **"A quelle distance maximum RileyLink doit être de moi ? Dois-je le porter sur moi ?"** Bonne question... à laquelle on répond [ici](https://loopkit.github.io/loopdocs/faqs/rileylink-faqs/#do-i-have-to-carry-the-rileylink-everywhere).
+    * **"Pourquoi s’appelle-t-il RileyLink?"** Riley est le prénom de la fille de Pete Schwamb, qui est celui qui a créé le RileyLink.
+    * **"Puis-je construire mon propre RileyLink ?"** Techniquement oui, mais ce n'est pas un projet facile. Vous aurez besoin d'outils spécialisés et de patience. Si vous voulez explorer cette possibilité, je vous recommande vivement de consulter le [Zulipchat](https://loop.zulipchat.com/#narrow/stream/148542-RileyLink) des personnes ayant déjà réussi leur propre construction au cours des dernières années. Seulement 3 personnes ont construit leur propre RileyLinks jusqu'à présent... mais cela signifie surement que c'est techniquement possible. Vous pourrez trouver les fichiers et logiciels du PCB, avec les instructions pour construire votre propre module matériel sur ici : [RileyLink Github](https://github.com/ps2/rileylink). 
+
 
 Le RileyLink (RL) est un périphérique *open-source* qui facilite la communication entre *Bluetooth Low Energy* (BLE) et 916MHz ou 433MHz communication sans fil. Qu'est-ce que cela veut dire pour vous ? Que le RileyLink est la passerelle entre votre pompe insuline, CGM, et iPhone.
 
@@ -135,6 +149,8 @@ Si vous connaissez bien votre pompe et le Dexcom, voici d'autres idées :
 14) Inscrivez-vous dans le groupe [Zulipchat](https://loop.zulipchat.com/) et / ou [le groupe Facebook de Looped](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf). Le groupe d'entraide français se trouve [ici](https://www.facebook.com/groups/478980526199264/).
 
 MAIS, après... il faut simplement attendre. **Vous ne pouvez pas en faire plus sans le RileyLink.** Cependant, si vous faites tout cela avant de recevoir le RL, vous serez prêt(e) à commencer tout de suite dès son arrivée.
+
+### Prochaine étape : [Compte de développeur Apple](https://cyoung1024.github.io/guide-loop-fr/etape6)
 
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step5/)
 
