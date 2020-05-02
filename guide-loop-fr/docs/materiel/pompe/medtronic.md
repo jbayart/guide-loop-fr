@@ -1,12 +1,12 @@
 #  Pompe insuline Medtronic
 ![medtronic](img/medtronic.png)
 
-Il y a un certain nombre de pompes Medtronic fabriquées entre 2006 - 2012 qui sont compatible avec Loop. La compatibilité a deux conditions : (1) le modèle de la pompe et (2) le firmware.
+Il y a un certain nombre de pompes Medtronic fabriquées entre 2006 - 2012 qui sont compatibles avec Loop. La compatibilité dépend de deux informations : (1) le modèle de la pompe et (2) le firmware.
 
 >
-> POMPES MEDTRONIC COMPATIBLES AVEC LOOP : les pompes de la série de 515 / 715 et 522 / 722 sont toutes compatibles. Les pompes 523 / 723 et 544 / 744 vous requerront de vérifier le firmware pour voir si la pompe est compatible avec Loop ou non. Voir les notes 3 et 4 en bas de page pour les conditions.
+> POMPES MEDTRONIC COMPATIBLES AVEC LOOP : les pompes de la série de 515 / 715 et 522 / 722 sont toutes compatibles. Les pompes 523 / 723 et 544 / 744 vous demanderont de vérifier le firmware pour voir si la pompe est compatible avec Loop ou non. Voir les notes 3 et 4 en bas de page pour les conditions.
 >
-> POMPES **NON COMPATIBLE** AVEC LOOP : les pompes Medtronic de la série de 515 / 712, 551, 751, et la série 600 ***ne sont pas*** compatible avec Loop. Les marques Animas, T-slim, Dana-RS, Roche Combo et toute autre pompe à laquelle vous pourrez penser ne sont pas non plus compatibles (sauf Omnipod).
+> POMPES **NON COMPATIBLES** AVEC LOOP : les pompes Medtronic de la série de 515 / 712, 551, 751, et la série 600 ***ne sont pas*** compatibles avec Loop. Les marques Animas, T-slim, Dana-RS, Roche Combo et toute autre pompe à laquelle vous pourriez penser ne sont pas non plus compatibles (sauf Omnipod).
 >
 
 | | | Pompe insuline | | | |
@@ -17,9 +17,9 @@ Il y a un certain nombre de pompes Medtronic fabriquées entre 2006 - 2012 qui s
 | | Dexcom G6 | ✅ | ✅ | ✅ | ✅ |
 | | MM CGM | -- | ✅ | ✅ | ✅ |
 
-(1) L'accès aux taux de glucose hors connexion requiert le receveur avec Share, et l'application Share2 sur le même iPhone que l'application Loop. Accès dépendant sur l'Internet via les serveurs de Dexcom Share est aussi supporté.
+(1) L'accès aux taux de glucose hors connexion requiert le receveur avec Share, et l'application Share2 sur le même iPhone que l'application Loop. L'accès dépendant d'Internet via les serveurs de Dexcom Share est aussi supporté.
 
-(2) Les pompes x22 ont été fabriquées avant le correctif de sécurité au firmware, donc ces modèles sont compatible car elles auront la version de firmware 2.4A maximum. Vous pouvez vérifier, mais de nos jours toutes les pompes x22 étaient de version compatible.
+(2) Les pompes x22 ont été fabriquées avant le correctif de sécurité au firmware, donc ces modèles sont compatibles car elles auront la version de firmware 2.4A maximum. Vous pouvez vérifier, mais de nos jours toutes les pompes x22 étaient de version compatible.
 
 (3) La version de firmware 2.4A maximum est obligatoire pour utiliser la boucle fermée et la fonction de bolus.
 
@@ -61,7 +61,7 @@ Les différences entre les modèles 500 et 700 sont limitées.
 | | 0,1 | 0,1 | Supérieur à 10 unités |
 
 * Additionnellement, vu la façon dont Loop récupère les données de la pompe, les séries x23 et x54 sont légèrement mieux pour conserver de la batterie via l'utilisation des packets MySentry pour collecter les données de la pompe. Les x22 n'utilisent pas MySentry.
-* Les x23 / x54 sont également plus rapide en ce qui concerne les bolus supérieur à 10 unités. Sur une pompe x23, un bolus de 13 unités prend 5 minutes pour finir. Sur une x13, un bolus de 13u prend 8 minutes et 40 secondes pour finir.
+* Les x23 / x54 sont également plus rapides en ce qui concerne les bolus supérieurs à 10 unités. Sur une pompe x23, un bolus de 13 unités prend 5 minutes pour finir. Sur une x13, un bolus de 13u prend 8 minutes et 40 secondes pour finir.
 
 ## Le firmware de la pompe
 
@@ -69,17 +69,17 @@ Les différences entre les modèles 500 et 700 sont limitées.
 > Si vous souhaitez utiliser une pompe de la série 523 / 723 ou de 554 / 754, vous devez vérifiez la version de firmware pour sa compatibilité.
 >
 
-Le firmware d'une pompe est le logiciel qu'elle utilise. L'ancien firmware Medtronic permet à Loop d'agir comme une "télécommande" pour fixer les débits de basale temporaire et faire un raport des données de la pompe. Le firmware plus récent a désactivé cet accès et ne peut donc pas être utilisé avec des systèmes "*DIY*" (d'anglais "do it yourself", le faire soi-même). Il n'y a pas de nos jours la possibilité de rétrograder le firmware d'une pompe insuline ou le remplacer avec u firmware plus ancien. Avant d'acheter une pompe, verifiez que le firmware est compatible.
+Le firmware d'une pompe est le logiciel qu'elle utilise. L'ancien firmware Medtronic permet à Loop d'agir comme une "télécommande" pour fixer les débits de basale temporaire et faire un rapport des données de la pompe. Le firmware le plus récent a désactivé cet accès et ne peut donc pas être utilisé avec des systèmes "*DIY*" (d'anglais "do it yourself", le faire soi-même). Il n'y a pas de nos jours la possibilité de rétrograder le firmware d'une pompe insuline ou le remplacer avec un firmware plus ancien. Avant d'acheter une pompe, verifiez que le firmware est compatible.
 
-Pour trouver le firmware de la pompe, vous devez l'allumer. Si la pompe n'était pas allumée depuis un bon moment, elle commencera par compter et la version du firmware s'affichra en bas à droit de l'écran, comme ceci :
+Pour trouver le firmware de la pompe, vous devez l'allumer. Si la pompe n'était pas allumée depuis un bon moment, elle commencera par compter et la version du firmware s'affichera en bas à droit de l'écran, comme ceci :
 
 ![ecran-startup](img/ecran-startup.png)
 
-Vous puvez également vérifier en  :
+Vous pouvez également vérifier en  :
 
 1) appuyant sur le boutton ![esc](img/esc.png)
 
-2) descandant tout en bas du menu avec le bouton ![down](img/light_button.png)
+2) descendant tout en bas du menu avec le bouton ![down](img/light_button.png)
 
 3) lisant la toute dernière ligne
 ![firmware](img/pump_firmware.png)
@@ -94,31 +94,31 @@ Trouver une pompe Medtronic compatible est probablement la partie la plus diffic
 * Télécharger des applications mobiles comme NextDoor ou letgo
 
 ## Acheter en sécurité
-Si vous choissisez d'acheter une pompe d'un inconnu, voici quelques austuces :
+Si vous choissisez d'acheter une pompe d'un inconnu, voici quelques astuces :
 
 * Utilisez PayPal avec l'option "Produits et Services". Ceci ne coûte rien pour l'acheteur, mais le vendeur paye 2,95% de son profit à PayPal. PayPal offre un peu de protection pour l'acheteur et le vendeur en cas de fraude.
 
-* Demandez des photos de la pompe. Vérifiez que le numéro de série au dos de la pompe correspond au numéro affiché dans le menu de la pompe. Demandez également une courte vidéo de la pompe, ou au moins une photo de la pompe allumée, pour que vous puissiez voir le firmware et le numéro de modèle. Des fissures et un peu d'usure est normal. Ces pompes ne sont typiquement pas toute nickel. Plusieurs personnes loope avec des pompes qui ont des petites fissures et rayeurs, mais vous pourriez demander si cela vous inquiète.
+* Demandez des photos de la pompe. Vérifiez que le numéro de série au dos de la pompe correspond au numéro affiché dans le menu de la pompe. Demandez également une courte vidéo de la pompe, ou au moins une photo de la pompe allumée, pour que vous puissiez voir le firmware et le numéro de modèle. Des fissures et un peu d'usure est normal. Ces pompes ne sont typiquement pas toute nickels. Plusieurs personnes loopent avec des pompes qui ont des petites fissures et rayures, mais vous pouvez demander si cela vous inquiète.
 
-* Faites attention si vous voyez que le couvercle de la réservoir est abîmé, comme [ici](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#motor-error). Ces pompes ne fonctionnent pas, en général (ou marcheront qu'à moitié du temps). Cependant, certains ont pu réparé ces pompes comme montré dans le lien ci-dessus. Mais assurez-vous de bien vérifier avant d'acheter.
+* Faites attention si vous voyez que le couvercle du réservoir est abîmé, comme [ici](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#motor-error). Ces pompes ne fonctionnent pas, en général (ou marcheront que la moitié du temps). Cependant, certains ont pu réparé ces pompes comme montré dans le lien ci-dessus. Mais assurez-vous de bien vérifier avant d'acheter.
 
-* Des réparations aux fissures ou petites parties manquantes du couvercle de la batterie ou du réservoir sont possibles et ne sont pas très difficile dans le plupart des cas. Vous pouvez lire plus [ici](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#crackmissing-piece-repairs).
+* Des réparations pour les fissures ou petites parties manquantes du couvercle de la batterie ou du réservoir sont possibles et ne sont pas très difficiles dans le plupart des cas. Plus d'informations [ici](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#crackmissing-piece-repairs).
 
-* Demandez un noméro de suivi pour votre colis. Demandez également un peu de protection autour de la pompe, comme du papier bulle. Verifiez que vous recevez un numéro de suivi dans un délaç raisonnable après avoir payé.
+* Demandez un numéro de suivi pour votre colis. Demandez également un peu de protection autour de la pompe, comme du papier bulle. Verifiez que vous recevez un numéro de suivi dans un délai raisonnable après avoir payé.
 
-Quelques drapeaux rouges qui peuvent indiquer une arnaque :
+Quelques indices qui peuvent indiquer une arnaque :
 
-* Le vendeur vous demande de procéder avec un payiement via "amis et famille" sur PayPal, surtout si vous le connaissez pas ou n'avez pas de liste de référence pour cette personne. Payer de cette manière ne garantie aucune protection d'acheteur. C'est comme donner des espèces, donc si vous payez de cette manière il faut que vous ayez vraiment confience en cette personne.
+* Le vendeur vous demande de procéder avec un paiement via "amis et famille" sur PayPal, surtout si vous le connaissez pas ou n'avez pas de liste de référence pour cette personne. Payer de cette manière ne garantie aucune protection d'acheteur. C'est comme donner des espèces, donc si vous payez de cette manière il faut que vous ayez vraiment confiance en cette personne.
 
-* Le vendeur offre une pompe "quasi-neuve". Ces pompes doivent dater d'au moins il y a 7 ans. Vous croyez vraiement qu'une pompe qui a plus que 7 ans doit être neuve ? C'est assez suspect... Ça peut arriver, mais c'est rare.
+* Le vendeur offre une pompe "quasi-neuve". Ces pompes doivent dater d'au moins il y a 7 ans. Vous croyez vraiement qu'une pompe qui a plus que 7 ans peut être neuve ? C'est assez suspect... Cela peut arriver, mais c'est rare.
 
 * Le vendeur n'est pas en position de vous envoyer des nouvelles photos sur demande. C'est vrai qu'il a publié quelques photos quand il a fait l'annonce, mais s'il s'avère qu'il a téléchargé des photos de quelqu'un d'autre en ligne ? Le vendeur devrait être capable de vous envoyer plus de photos. Demandez des photos des couvercles batterie / réservoir pour vérifier la condition.
 
 ## Matériel pour la pompe
 (nb : ce qui suit ne s'applique pas à ceux habitant en France)
 
-Medtronic ne vende pas classiquement le matériel pour la pompe directement aux consommateurs qui n'ont pas préalablement acheté une pompe Medtronic chez eux. Demandez à votre assurance maladie comment acheter des matériels via un pourvoyeur d'équipement médical durable. Typiquement, le pourvoyeur va coordonner avec votre assurance et votre médecin pour récupérer l'approbation nécessaire et les ordonnances pour les matériels. Si c'est la toute première fois que vous utiliez les cathéters Medtronic, vouz pourrez demander de l'aide à vos amis pour pouvoir essayer des différents types de cathéters avant d'en acheter.
+Medtronic ne vend pas classiquement le matériel pour la pompe directement aux consommateurs qui n'ont pas préalablement acheté une pompe Medtronic chez eux. Demandez à votre assurance maladie comment acheter du matériel via un pourvoyeur d'équipement médical durable. Typiquement, le pourvoyeur va se coordonner avec votre assurance et votre médecin pour récupérer l'approbation nécessaire et les ordonnances pour le matériel. Si c'est la toute première fois que vous utilisez les cathéters Medtronic, vouz pouvez demander de l'aide à vos amis pour pouvoir essayer des différents types de cathéters avant d'en acheter.
 
-Pour ceux habitant en France, il suffit de demander à votre fournisseur soit de louer une pompe Medtronic pour avoir les matériels soit s'il serait d'accord pour vous fournir les matériels nécessaires en utilisant votre propre pompe Medtronic.
+Pour ceux habitant en France, il suffit de demander à votre fournisseur soit de louer une pompe Medtronic pour avoir le matériel, soit s'il est d'accord pour vous fournir le matériel nécessaire en utilisant votre propre pompe Medtronic.
 
 ### [Cliquez ici pour voir la page d'origine](https://loopkit.github.io/loopdocs/build/step3)
